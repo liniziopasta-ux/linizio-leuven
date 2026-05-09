@@ -97,7 +97,8 @@
       "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
       "price": 20,
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🐟 Shiitake al Salmone",
