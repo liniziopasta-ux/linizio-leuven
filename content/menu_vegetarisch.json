@@ -100,7 +100,7 @@
       "desc_en": "Broccoli, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "17.00",
       "kv": "KV €23",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🌿 Alla Sasi (Fusilli of Linguine)",
