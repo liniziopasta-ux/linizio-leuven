@@ -12,14 +12,14 @@
       "desc_nl": "Tomatensaus, ajuin, spek, verse tomaten, basilicum, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, onion, bacon, fresh tomatoes, basil, PARMIGIANO REGGIANO D.O.P",
       "price": "16.00",
-      "kv": "KV €23  🥡🥡 medium bekers "
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Bolognese",
       "desc_nl": "Tomatensaus, gehakt rundsvlees, gehakt varkensvlees, selder, wortels, ajuin, muskaatnoot, peper, boter, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, minced beef, minced pork, celery, carrots, onion, nutmeg, pepper, butter, PARMIGIANO REGGIANO D.O.P",
       "price": "16.00",
-      "kv": "KV €23  🥡🥡 medium bekers ",
+      "kv": "KV €23,00🥡🥡 medium bekers ",
       "sold_out": false
     },
     {
@@ -34,7 +34,7 @@
       "desc_nl": "Tomatensaus, spek, ajuin, gepasteuriseerd eieren, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, zwarte peper",
       "desc_en": "Tomato sauce, bacon, onion, pasteurised eggs, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, black pepper",
       "price": "17.00",
-      "kv": "KV €23 🥡🥡 medium bekers "
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Panna, Prosciutto e Funghi",
@@ -48,49 +48,49 @@
       "desc_nl": "Spek, ajuin, gepasteuriseerd eieren, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, zwarte peper",
       "desc_en": "Bacon, onion, pasteurised eggs, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, black pepper",
       "price": "17.00",
-      "kv": "KV €23 🥡🥡 medium bekers "
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Diavola",
       "desc_nl": "Tomatensaus, verse room, champignons, spek, pilipili, peterselie, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, fresh cream, mushrooms, bacon, chilli, parsley, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
-      "kv": "KV €23 🥡🥡 medium bekers "
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Chef",
       "desc_nl": "Tomatensaus, look, ajuin, spek, broccoli, verse tomaten, basilicum, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, garlic, onion, bacon, broccoli, fresh tomatoes, basil, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
-      "kv": "KV €23 🥡🥡 medium bekers "
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Paesana",
       "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, champignons, look, peterselie, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, parsley, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
-      "kv": "KV €23 🥡🥡 medium bekers "
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Inizio",
       "desc_nl": "Bolognese, verse room, zwarte peper, muskaatnoot, ajuin in witte wijn, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Bolognese, fresh cream, black pepper, nutmeg, onion in white wine, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
-      "kv": "KV €23 🥡🥡 medium bekers "
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 American Bar",
       "desc_nl": "Tomatensaus, spek, ajuin, gepasteuriseerd eieren, verse room, peterselie, zwarte peper, pesto, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, bacon, onion, pasteurised eggs, fresh cream, parsley, black pepper, pesto, PARMIGIANO REGGIANO D.O.P",
       "price": "18.00",
-      "kv": "KV €24 🥡🥡 medium bekers "
+      "kv": "KV €24,00 🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Italian Bar",
       "desc_nl": "Spek, ajuin, gepasteuriseerd eieren, verse room, peterselie, zwarte peper, pesto, parmezaanschilfers, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Bacon, onion, pasteurised eggs, fresh cream, parsley, black pepper, pesto, Parmesan shavings, PARMIGIANO REGGIANO D.O.P",
       "price": "18.00",
-      "kv": "KV €24 🥡🥡 medium bekers "
+      "kv": "KV €24,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Origineel Carbonara",
