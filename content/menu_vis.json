@@ -68,7 +68,8 @@
       "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, schelpen",
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, clams",
       "price": "20.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🍤 Scampi Shiitake",
