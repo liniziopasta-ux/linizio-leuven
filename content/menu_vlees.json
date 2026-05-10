@@ -121,6 +121,14 @@
       "desc_nl": "Verse room, spek, look, broccoli, gorgonzola, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Fresh cream, bacon, garlic, broccoli, gorgonzola, PARMIGIANO REGGIANO D.O.P",
       "kv": "KV €23,00🥡🥡 medium bekers"
+    },
+    {
+      "price": 17.5,
+      "sold_out": false,
+      "name": "🥩BROCCOLI BOLOGNESE ",
+      "desc_nl": "\nTomatensaus, verse room, broccoli, bolognese, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, fresh cream, broccoli, bolognese, PARMIGIANO REGGIANO D.O.P",
+      "kv": "KV €24,00 🥡🥡 medium bekers"
     }
   ]
 }
