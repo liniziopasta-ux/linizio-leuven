@@ -105,6 +105,14 @@
       "desc_en": "Guanciale, cherry tomatoes, tomato sauce, a pinch of pepper, Pecorino cheese",
       "price": "18.00",
       "kv": ""
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "ZUCCHINE E RICOTTA",
+      "desc_nl": "Tomatensaus, courgettes, ajuin, spek, witte wijn, ricottakaas, verse room, peterselie, zwarte peper, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, zucchini, onion, bacon, white wine, ricotta cheese, fresh cream, parsley, black pepper, PARMIGIANO REGGIANO D.O.P",
+      "kv": "23,00🥡🥡medium bekers "
     }
   ]
 }
