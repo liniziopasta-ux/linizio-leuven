@@ -113,6 +113,14 @@
       "desc_nl": "Tomatensaus, courgettes, ajuin, spek, witte wijn, ricottakaas, verse room, peterselie, zwarte peper, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, zucchini, onion, bacon, white wine, ricotta cheese, fresh cream, parsley, black pepper, PARMIGIANO REGGIANO D.O.P",
       "kv": "KV €23,00🥡🥡 medium bekers"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩BROCCOLI AL GORGONZOLA  ",
+      "desc_nl": "Verse room, spek, look, broccoli, gorgonzola, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Fresh cream, bacon, garlic, broccoli, gorgonzola, PARMIGIANO REGGIANO D.O.P",
+      "kv": "KV €23,00🥡🥡 medium bekers"
     }
   ]
 }
