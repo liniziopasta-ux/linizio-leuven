@@ -77,6 +77,14 @@
       "desc_en": "King prawns, shiitake, garlic, olive oil, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
       "price": "20.00",
       "kv": ""
+    },
+    {
+      "price": 18,
+      "sold_out": false,
+      "name": "🐟🥦MARINARA ",
+      "desc_nl": "Kers tomatensaus, look, ajuin, olijven, kappers, ansjovis, broccoli, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cherry tomato sauce, garlic, onion, olives, hairdressers, anchovies, broccoli, basil, PARMIGIANO REGGIANO D.O.P\n",
+      "kv": "KV €24,00🥡🥡 medium bekers"
     }
   ]
 }
