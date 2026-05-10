@@ -113,6 +113,13 @@
       "desc_en": "King prawns, garlic, olive oil, shiitake, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
       "price": "20.00",
       "kv": ""
+    },
+    {
+      "price": 18,
+      "sold_out": false,
+      "name": "🍤SCAMPI MET LINGUINE",
+      "desc_nl": "Kers tomaten,look, peterselie,scampi's,zwarte peper",
+      "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
     }
   ]
 }
