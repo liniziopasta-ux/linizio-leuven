@@ -5,7 +5,8 @@
       "desc_nl": "Voeg burrata toe aan elk recept (behalve visgerechten) voor extra romigheid",
       "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess",
       "price": 6,
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🥦 Broccoli (Linguine)",
