@@ -79,7 +79,8 @@
       "desc_nl": "Spaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, burrata-crème, extra vierge olijfolie, verse basilicum",
       "desc_en": "Squid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, burrata cream, extra virgin olive oil, fresh basil",
       "price": "18.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🍤 Nero Seppia Scampi",
