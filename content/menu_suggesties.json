@@ -35,7 +35,8 @@
       "desc_nl": "Tomaten (geel of rood afhankelijk van seizoen), burrata, sjalot, extra vierge olijfolie, chilipeper, verse basilicum, zout",
       "desc_en": "Tomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt",
       "price": "16.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🍄 Shiitake Linguine",
