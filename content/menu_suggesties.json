@@ -71,7 +71,8 @@
       "desc_nl": "Pompoen, room, krokante reepjes Speck Alto Adige, extra vergine olijfolie, sjalot, burrata, zout, peper",
       "desc_en": "Pumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper",
       "price": "17.50",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🦑 Spaghetti Rode Duivels",
