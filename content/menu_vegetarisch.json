@@ -39,13 +39,6 @@
       "kv": ""
     },
     {
-      "name": "🧀 4 Kazen (Gnocchi of Rigatoni)",
-      "desc_nl": "Taleggio, mascarpone, gorgonzola, PARMIGIANO REGGIANO D.O.P, verse room",
-      "desc_en": "Taleggio, mascarpone, gorgonzola, PARMIGIANO REGGIANO D.O.P, fresh cream",
-      "price": "16.00",
-      "kv": ""
-    },
-    {
       "name": "🍅 Gradisca ai Pomodori Secchi",
       "desc_nl": "Tomatensaus, verse room, gedroogde tomaten, PARMIGIANO REGGIANO D.O.P, peterselie, parmezaanschilfers, zwarte peper",
       "desc_en": "Tomato sauce, fresh cream, sun-dried tomatoes, PARMIGIANO REGGIANO D.O.P, parsley, Parmesan shavings, black pepper",
@@ -56,6 +49,13 @@
       "name": " 🧀Buffels Mozzarella (lauwe saus)",
       "desc_nl": "Kerstomatensaus, ajuin, pesto, gedroogde tomaten, mozzarella van buffelmelk, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
       "desc_en": "Cherry tomato sauce, onion, pesto, sun-dried tomatoes, buffalo mozzarella, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
+      "price": "16.00",
+      "kv": ""
+    },
+    {
+      "name": "🧀 4 Kazen (Gnocchi of Rigatoni)",
+      "desc_nl": "Taleggio, mascarpone, gorgonzola, PARMIGIANO REGGIANO D.O.P, verse room",
+      "desc_en": "Taleggio, mascarpone, gorgonzola, PARMIGIANO REGGIANO D.O.P, fresh cream",
       "price": "16.00",
       "kv": ""
     },
