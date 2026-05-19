@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "name": "🐟🥦 Broccoli met Tonijn",
+      "desc_nl": "Tomatensaus, verse room, broccoli, tonijn, zwarte peper, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, fresh cream, broccoli, tuna, black pepper, PARMIGIANO REGGIANO D.O.P",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
       "name": "🍤 Paesana agli Scampi",
       "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, paddestoelen, look, ajuin, peterselie, PARMIGIANO REGGIANO D.O.P, witte wijn, scampi's, zwarte peper",
       "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, onion, parsley, PARMIGIANO REGGIANO D.O.P, white wine, king prawns, black pepper",
@@ -13,13 +20,6 @@
       "desc_en": "Pumpkin, garlic, onion, fresh cream, cherry tomatoes, king prawns, parsley, chilli, PARMIGIANO REGGIANO D.O.P",
       "price": "18.00",
       "kv": ""
-    },
-    {
-      "name": "🐟🥦 Broccoli met Tonijn",
-      "desc_nl": "Tomatensaus, verse room, broccoli, tonijn, zwarte peper, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Tomato sauce, fresh cream, broccoli, tuna, black pepper, PARMIGIANO REGGIANO D.O.P",
-      "price": "17.00",
-      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🐟 Tonijn",
