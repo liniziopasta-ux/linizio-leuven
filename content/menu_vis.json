@@ -54,7 +54,8 @@
       "desc_nl": "Zalm, ajuin, room, broccoli, curcuma, zwarte peper, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Salmon, onion, cream, broccoli, turmeric, black pepper, PARMIGIANO REGGIANO D.O.P",
       "price": "19.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🐚 Linguine con le Vongole",
