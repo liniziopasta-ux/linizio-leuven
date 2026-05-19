@@ -102,7 +102,7 @@
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
       "price": 20,
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🐟 Shiitake al Salmone",
