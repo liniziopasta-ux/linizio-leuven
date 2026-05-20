@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "name": "🐚 Linguine con le Vongole",
+      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, schelpen",
+      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, clams",
+      "price": "20.00",
+      "kv": "",
+      "sold_out": false
+    },
+    {
       "name": "🐟🥦 Broccoli met Tonijn",
       "desc_nl": "Tomatensaus, verse room, broccoli, tonijn, zwarte peper, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, fresh cream, broccoli, tuna, black pepper, PARMIGIANO REGGIANO D.O.P",
@@ -58,14 +66,6 @@
       "sold_out": true
     },
     {
-      "name": "🐚 Linguine con le Vongole",
-      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, schelpen",
-      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, clams",
-      "price": "20.00",
-      "kv": "",
-      "sold_out": false
-    },
-    {
       "name": "🍤 Scampi Shiitake",
       "desc_nl": "Scampi, shiitake, look, olijfolie, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas",
       "desc_en": "King prawns, shiitake, garlic, olive oil, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
@@ -75,17 +75,17 @@
     {
       "price": 18,
       "sold_out": false,
-      "name": "🐟🥦MARINARA ",
-      "desc_nl": "Kers tomatensaus, look, ajuin, olijven, kappers, ansjovis, broccoli, basilicum, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Cherry tomato sauce, garlic, onion, olives, hairdressers, anchovies, broccoli, basil, PARMIGIANO REGGIANO D.O.P\n",
-      "kv": "KV €24,00🥡🥡 medium bekers"
+      "name": "🦑🦀🐚ZEEVRUCHTEN” FRUTTI DI MARE” ",
+      "desc_nl": "\nKers tomatensaus, olijven olie,look, peterselie, zeevruchten, PARMIGIANO REGGIANO D.O.P\n",
+      "desc_en": "Cherry tomato sauce, olive oil, garlic, parsley, seafood, PARMIGIANO REGGIANO D.O.P"
     },
     {
       "price": 18,
       "sold_out": false,
-      "name": "🦑🦀🐚ZEEVRUCHTEN” FRUTTI DI MARE” ",
-      "desc_nl": "\nKers tomatensaus, olijven olie,look, peterselie, zeevruchten, PARMIGIANO REGGIANO D.O.P\n",
-      "desc_en": "Cherry tomato sauce, olive oil, garlic, parsley, seafood, PARMIGIANO REGGIANO D.O.P"
+      "name": "🐟🥦MARINARA ",
+      "desc_nl": "Kers tomatensaus, look, ajuin, olijven, kappers, ansjovis, broccoli, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cherry tomato sauce, garlic, onion, olives, hairdressers, anchovies, broccoli, basil, PARMIGIANO REGGIANO D.O.P\n",
+      "kv": "KV €24,00🥡🥡 medium bekers"
     },
     {
       "price": 19,
