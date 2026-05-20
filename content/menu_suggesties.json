@@ -9,6 +9,14 @@
       "sold_out": false
     },
     {
+      "name": "🐚 Linguine con Vongole",
+      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
+      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
+      "price": 20,
+      "kv": "",
+      "sold_out": false
+    },
+    {
       "name": "🥦 Broccoli (Linguine)",
       "desc_nl": "Linguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
       "desc_en": "Linguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper",
@@ -95,14 +103,6 @@
       "desc_en": "Squid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs",
       "price": "19.00",
       "kv": ""
-    },
-    {
-      "name": "🐚 Linguine con Vongole",
-      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
-      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
-      "price": 20,
-      "kv": "",
-      "sold_out": false
     },
     {
       "name": "🐟 Shiitake al Salmone",
