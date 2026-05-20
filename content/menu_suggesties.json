@@ -6,7 +6,7 @@
       "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess",
       "price": 6,
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🥦 Broccoli (Linguine)",
