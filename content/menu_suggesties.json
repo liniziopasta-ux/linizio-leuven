@@ -1,18 +1,18 @@
 {
   "items": [
     {
-      "name": "🐚 Linguine con Vongole",
-      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
-      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
-      "price": 20,
-      "kv": "",
-      "sold_out": false
-    },
-    {
       "name": "🧀 Extra Burrata",
       "desc_nl": "Voeg burrata toe aan elk recept (behalve visgerechten) voor extra romigheid",
       "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess",
       "price": 6,
+      "kv": "",
+      "sold_out": false
+    },
+    {
+      "name": "🐚 Linguine con Vongole",
+      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
+      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
+      "price": 20,
       "kv": "",
       "sold_out": false
     },
