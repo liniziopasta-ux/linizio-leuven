@@ -9,6 +9,13 @@
       "sold_out": true
     },
     {
+      "name": "🍄 Shiitake Linguine",
+      "desc_nl": "Shiitake, look, boter, zwarte peper, Parmezaan kaas",
+      "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
+      "price": "17.00",
+      "kv": ""
+    },
+    {
       "name": "🥦 Broccoli (Linguine)",
       "desc_nl": "Linguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
       "desc_en": "Linguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper",
@@ -37,13 +44,6 @@
       "price": "16.00",
       "kv": "",
       "sold_out": true
-    },
-    {
-      "name": "🍄 Shiitake Linguine",
-      "desc_nl": "Shiitake, look, boter, zwarte peper, Parmezaan kaas",
-      "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
-      "price": "17.00",
-      "kv": ""
     },
     {
       "name": "🧅 Genovese",
@@ -126,5 +126,7 @@
       "desc_nl": "Kers tomaten,look, peterselie,scampi's,zwarte peper",
       "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
     }
-  ]
+  ],
+  "note_nl": "Provate questa pasta 🍝 ",
+  "note_en": "Provate questa pasta 🍝 "
 }
