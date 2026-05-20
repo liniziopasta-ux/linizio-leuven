@@ -9,6 +9,14 @@
       "sold_out": true
     },
     {
+      "name": "🥦 Broccoli (Linguine)",
+      "desc_nl": "Linguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
+      "desc_en": "Linguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper",
+      "price": 16,
+      "kv": "",
+      "sold_out": false
+    },
+    {
       "name": "🧅 Genovese",
       "desc_nl": "Traditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
       "desc_en": "Traditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan",
@@ -21,14 +29,6 @@
       "desc_en": "Olive oil, fresh tomatoes, onion, garlic, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basil, black pepper",
       "price": "16.00",
       "kv": ""
-    },
-    {
-      "name": "🥦 Broccoli (Linguine)",
-      "desc_nl": "Linguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
-      "desc_en": "Linguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper",
-      "price": 16,
-      "kv": "",
-      "sold_out": false
     },
     {
       "name": "🎃 Gnocchi met Pompoen",
