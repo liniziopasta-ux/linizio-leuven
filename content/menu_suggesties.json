@@ -1,19 +1,19 @@
 {
   "items": [
     {
-      "name": "🧅 Genovese",
-      "desc_nl": "Traditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
-      "desc_en": "Traditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
       "name": "🧀 Extra Burrata",
       "desc_nl": "Voeg burrata toe aan elk recept (behalve visgerechten) voor extra romigheid",
       "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess",
       "price": 6,
       "kv": "",
       "sold_out": true
+    },
+    {
+      "name": "🧅 Genovese",
+      "desc_nl": "Traditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
+      "desc_en": "Traditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan",
+      "price": "17.00",
+      "kv": ""
     },
     {
       "name": "🍅 Gnocchi alla Sorrentina",
