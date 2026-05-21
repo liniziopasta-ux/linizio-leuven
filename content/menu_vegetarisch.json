@@ -110,17 +110,17 @@
       "sold_out": false
     },
     {
-      "name": "🎃 Pompoen zonder room (Linguine)",
-      "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, platte peterselie",
-      "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, flat-leaf parsley",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
       "name": "🌿 Pesto (Linguine of Penne)",
       "desc_nl": "Verse basilicum, look, pijnappelpitten, muskaatnoot, PARMIGIANO REGGIANO D.O.P, zwarte peper",
       "desc_en": "Fresh basil, garlic, pine nuts, nutmeg, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "18.00",
+      "kv": ""
+    },
+    {
+      "name": "🎃 Pompoen zonder room (Linguine)",
+      "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, platte peterselie",
+      "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, flat-leaf parsley",
+      "price": "17.00",
       "kv": ""
     },
     {
