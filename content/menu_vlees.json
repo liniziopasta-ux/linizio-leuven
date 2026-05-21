@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "name": "🥩 Arrabbiata con Salame",
+      "desc_nl": "Kerstomatensaus, look, pikante salami, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cherry tomato sauce, garlic, spicy salami, chilli, basil, PARMIGIANO REGGIANO D.O.P",
+      "price": 17,
+      "kv": ""
+    },
+    {
       "name": "🥩 Amatriciana",
       "desc_nl": "Tomatensaus, ajuin, spek, verse tomaten, basilicum, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, onion, bacon, fresh tomatoes, basil, PARMIGIANO REGGIANO D.O.P",
@@ -21,13 +28,6 @@
       "price": "16.00",
       "kv": "KV €23,00🥡🥡 medium bekers ",
       "sold_out": false
-    },
-    {
-      "name": "🥩 Arrabbiata con Salame",
-      "desc_nl": "Kerstomatensaus, look, pikante salami, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Cherry tomato sauce, garlic, spicy salami, chilli, basil, PARMIGIANO REGGIANO D.O.P",
-      "price": 17,
-      "kv": ""
     },
     {
       "name": "🥩 Carbonara con Pomodoro",
