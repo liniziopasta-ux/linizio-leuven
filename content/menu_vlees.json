@@ -44,17 +44,17 @@
       "kv": ""
     },
     {
-      "name": "🥩 Panna, Prosciutto e Funghi",
-      "desc_nl": "Gekookte hesp, verse room, champignons, peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
-      "desc_en": "Cooked ham, fresh cream, mushrooms, parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
       "name": "🥩 Origineel Carbonara",
       "desc_nl": "Guanciale, gepasteuriseerd eieren, Pecorino",
       "desc_en": "Guanciale, pasteurised eggs, Pecorino",
       "price": "18.00",
+      "kv": ""
+    },
+    {
+      "name": "🥩 Panna, Prosciutto e Funghi",
+      "desc_nl": "Gekookte hesp, verse room, champignons, peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
+      "desc_en": "Cooked ham, fresh cream, mushrooms, parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
+      "price": "17.00",
       "kv": ""
     },
     {
