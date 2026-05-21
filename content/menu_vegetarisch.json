@@ -117,17 +117,17 @@
       "kv": ""
     },
     {
-      "name": "🍅🥦 Vegetariana met Linguine",
-      "desc_nl": "Look, verse tomaten, verse broccoli, verse courgettes, platte peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
-      "desc_en": "Garlic, fresh tomatoes, fresh broccoli, fresh courgette, flat-leaf parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
       "name": "🌿 Pesto (Linguine of Penne)",
       "desc_nl": "Verse basilicum, look, pijnappelpitten, muskaatnoot, PARMIGIANO REGGIANO D.O.P, zwarte peper",
       "desc_en": "Fresh basil, garlic, pine nuts, nutmeg, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "18.00",
+      "kv": ""
+    },
+    {
+      "name": "🍅🥦 Vegetariana met Linguine",
+      "desc_nl": "Look, verse tomaten, verse broccoli, verse courgettes, platte peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
+      "desc_en": "Garlic, fresh tomatoes, fresh broccoli, fresh courgette, flat-leaf parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
+      "price": "17.00",
       "kv": ""
     },
     {
