@@ -79,18 +79,18 @@
       "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
-      "name": "🥩 American Bar",
-      "desc_nl": "Tomatensaus, spek, ajuin, gepasteuriseerd eieren, verse room, peterselie, zwarte peper, pesto, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Tomato sauce, bacon, onion, pasteurised eggs, fresh cream, parsley, black pepper, pesto, PARMIGIANO REGGIANO D.O.P",
-      "price": "18.00",
-      "kv": "KV €24,00 🥡🥡 medium bekers "
-    },
-    {
       "name": "🥩 Origineel Carbonara",
       "desc_nl": "Guanciale, gepasteuriseerd eieren, Pecorino",
       "desc_en": "Guanciale, pasteurised eggs, Pecorino",
       "price": "18.00",
       "kv": ""
+    },
+    {
+      "name": "🥩 American Bar",
+      "desc_nl": "Tomatensaus, spek, ajuin, gepasteuriseerd eieren, verse room, peterselie, zwarte peper, pesto, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, bacon, onion, pasteurised eggs, fresh cream, parsley, black pepper, pesto, PARMIGIANO REGGIANO D.O.P",
+      "price": "18.00",
+      "kv": "KV €24,00 🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Italian Bar",
