@@ -37,17 +37,17 @@
       "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
-      "name": "🥩 Arrabbiata con Salame",
-      "desc_nl": "Kerstomatensaus, look, pikante salami, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Cherry tomato sauce, garlic, spicy salami, chilli, basil, PARMIGIANO REGGIANO D.O.P",
-      "price": 17,
-      "kv": ""
-    },
-    {
       "name": "🥩 Origineel Carbonara",
       "desc_nl": "Guanciale, gepasteuriseerd eieren, Pecorino",
       "desc_en": "Guanciale, pasteurised eggs, Pecorino",
       "price": "18.00",
+      "kv": ""
+    },
+    {
+      "name": "🥩 Arrabbiata con Salame",
+      "desc_nl": "Kerstomatensaus, look, pikante salami, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cherry tomato sauce, garlic, spicy salami, chilli, basil, PARMIGIANO REGGIANO D.O.P",
+      "price": 17,
       "kv": ""
     },
     {
