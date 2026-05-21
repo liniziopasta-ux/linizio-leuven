@@ -168,18 +168,18 @@
       "desc_en": "Cooked hesp, fresh cream, broccoli, garlic & gorgonzola, black pepper, PARMIGIANO REGGIANO D.O.P"
     },
     {
-      "price": 17,
-      "sold_out": false,
-      "name": "🥩CASA “STOOFVLEES RAGÙ OP NAPOLITAANSE WIJZE MET “GNOCCHI “",
-      "desc_nl": "Tomatensaus, stoofvlees met 'ragu saus op napolitaanse wijze', ajuin, ricotta, basilicum, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Tomato sauce, stew with 'ragu sauce in Neapolitan style', onion, ricotta, basil, PARMIGIANO REGGIANO D.O.P"
-    },
-    {
       "price": 18,
       "sold_out": false,
       "name": "🥩PASTA E PATATE ALLA NAPOLETANA ☝️” MET PASTA MISTA” Zoals in Italië ",
       "desc_nl": "Olijfolie, knoflook, ui, wortelen, selderij, tomaat, aardappelen, pancetta,Parmezaanse kaas, scamorzakaas, rozemarijn, peper, peterselie",
       "desc_en": "Olive oil, garlic, onion, carrots, celery, tomato, potatoes, bacon, Parmesan cheese, scamorza cheese, rosemary, pepper, parsley \n"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩CASA “STOOFVLEES RAGÙ OP NAPOLITAANSE WIJZE MET “GNOCCHI “",
+      "desc_nl": "Tomatensaus, stoofvlees met 'ragu saus op napolitaanse wijze', ajuin, ricotta, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, stew with 'ragu sauce in Neapolitan style', onion, ricotta, basil, PARMIGIANO REGGIANO D.O.P"
     }
   ]
 }
