@@ -131,18 +131,18 @@
       "kv": ""
     },
     {
-      "name": "🥦🌿 Broccoli Pesto e Ricotta",
-      "desc_nl": "Broccoli, pesto, ricotta, look, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
-      "desc_en": "Broccoli, pesto, ricotta, garlic, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
-      "price": "18.00",
-      "kv": "KV €23,00🥡🥡 medium bekers "
-    },
-    {
       "name": "🌿 Pesto (Linguine of Penne)",
       "desc_nl": "Verse basilicum, look, pijnappelpitten, muskaatnoot, PARMIGIANO REGGIANO D.O.P, zwarte peper",
       "desc_en": "Fresh basil, garlic, pine nuts, nutmeg, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "18.00",
       "kv": ""
+    },
+    {
+      "name": "🥦🌿 Broccoli Pesto e Ricotta",
+      "desc_nl": "Broccoli, pesto, ricotta, look, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
+      "desc_en": "Broccoli, pesto, ricotta, garlic, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
+      "price": "18.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
     }
   ]
 }
