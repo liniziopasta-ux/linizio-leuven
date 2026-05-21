@@ -24,6 +24,14 @@
       "sold_out": false
     },
     {
+      "name": "🧄 Look (Linguine)",
+      "desc_nl": "Olijfolie, look, peterselie, peperoncino pili-pili, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Olive oil, garlic, parsley, peperoncino chilli, PARMIGIANO REGGIANO D.O.P",
+      "price": "13.50",
+      "kv": "",
+      "sold_out": false
+    },
+    {
       "name": "🧄🍅 Arrabbiata ",
       "desc_nl": "Kerstomatensaus, look, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Cherry tomato sauce, garlic, chilli, basil, PARMIGIANO REGGIANO D.O.P",
@@ -85,14 +93,6 @@
       "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, Parmesan shavings",
       "price": "17.00",
       "kv": "KV €23,00🥡🥡 medium bekers "
-    },
-    {
-      "name": "🧄 Look (Linguine)",
-      "desc_nl": "Olijfolie, look, peterselie, peperoncino pili-pili, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Olive oil, garlic, parsley, peperoncino chilli, PARMIGIANO REGGIANO D.O.P",
-      "price": "13.50",
-      "kv": "",
-      "sold_out": false
     },
     {
       "name": "🥦🧀 Broccoli 4 Kaas",
