@@ -124,18 +124,18 @@
       "kv": ""
     },
     {
-      "name": "🫒 Olijven en Kappers (Linguine)",
-      "desc_nl": "Olijven, kappers, look, kerstomaatjes, platte peterselie, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Olives, capers, garlic, cherry tomatoes, flat-leaf parsley, PARMIGIANO REGGIANO D.O.P",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
       "name": "🥦🌿 Broccoli Pesto e Ricotta",
       "desc_nl": "Broccoli, pesto, ricotta, look, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
       "desc_en": "Broccoli, pesto, ricotta, garlic, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "18.00",
       "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🫒 Olijven en Kappers (Linguine)",
+      "desc_nl": "Olijven, kappers, look, kerstomaatjes, platte peterselie, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Olives, capers, garlic, cherry tomatoes, flat-leaf parsley, PARMIGIANO REGGIANO D.O.P",
+      "price": "17.00",
+      "kv": ""
     },
     {
       "name": "🌿 Pesto (Linguine of Penne)",
