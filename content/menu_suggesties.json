@@ -80,7 +80,7 @@
       "desc_en": "Pumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper",
       "price": "17.50",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🦑 Spaghetti Rode Duivels",
