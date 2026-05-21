@@ -25,6 +25,14 @@
       "sold_out": true
     },
     {
+      "name": "🐚 Linguine con Vongole",
+      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
+      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
+      "price": 20,
+      "kv": "",
+      "sold_out": false
+    },
+    {
       "name": "🍅 Gnocchi alla Sorrentina",
       "desc_nl": "Olijfolie, verse tomaten, ajuin, look, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basilicum, zwarte peper",
       "desc_en": "Olive oil, fresh tomatoes, onion, garlic, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basil, black pepper",
@@ -118,14 +126,6 @@
       "name": "🍤SCAMPI MET LINGUINE",
       "desc_nl": "Kers tomaten,look, peterselie,scampi's,zwarte peper",
       "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
-    },
-    {
-      "name": "🐚 Linguine con Vongole",
-      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
-      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
-      "price": 20,
-      "kv": "",
-      "sold_out": false
     }
   ],
   "note_nl": "",
