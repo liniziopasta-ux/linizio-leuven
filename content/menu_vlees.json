@@ -30,18 +30,18 @@
       "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
-      "name": "🥩 Arrabbiata con Salame",
-      "desc_nl": "Kerstomatensaus, look, pikante salami, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Cherry tomato sauce, garlic, spicy salami, chilli, basil, PARMIGIANO REGGIANO D.O.P",
-      "price": 17,
-      "kv": ""
-    },
-    {
       "name": "🥩 Carbonara all'Italiana",
       "desc_nl": "Spek, ajuin, gepasteuriseerd eieren, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, zwarte peper",
       "desc_en": "Bacon, onion, pasteurised eggs, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, black pepper",
       "price": "17.00",
       "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Arrabbiata con Salame",
+      "desc_nl": "Kerstomatensaus, look, pikante salami, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cherry tomato sauce, garlic, spicy salami, chilli, basil, PARMIGIANO REGGIANO D.O.P",
+      "price": 17,
+      "kv": ""
     },
     {
       "name": "🥩 Panna, Prosciutto e Funghi",
