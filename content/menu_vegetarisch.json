@@ -1,18 +1,32 @@
 {
   "items": [
     {
-      "name": "🍅 Napoli met verse tomaten",
-      "desc_nl": "Tomatensaus, verse tomaten, ajuin, PARMIGIANO REGGIANO D.O.P, basilicum",
-      "desc_en": "Tomato sauce, fresh tomatoes, onion, PARMIGIANO REGGIANO D.O.P, basil",
-      "price": "11.50",
+      "name": "🍆 Aubergine alla Norma con Ricotta",
+      "desc_nl": "Kerstomatensaus, look, ajuin, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basilicum, zwarte peper",
+      "desc_en": "Cherry tomato sauce, garlic, onion, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper",
+      "price": "17.00",
+      "kv": ""
+    },
+    {
+      "name": "🧄 Look (Linguine)",
+      "desc_nl": "Olijfolie, look, peterselie, peperoncino pili-pili, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Olive oil, garlic, parsley, peperoncino chilli, PARMIGIANO REGGIANO D.O.P",
+      "price": "13.50",
       "kv": "",
       "sold_out": false
     },
     {
-      "name": "🍅 Napoli al Pomodoro Fresco (Rigatoni of Linguine)",
-      "desc_nl": "Olijfolie, verse tomaten, ajuin, PARMIGIANO REGGIANO D.O.P, basilicum, zwarte peper",
-      "desc_en": "Olive oil, fresh tomatoes, onion, PARMIGIANO REGGIANO D.O.P, basil, black pepper",
-      "price": "11.50",
+      "name": " 🧀Buffels Mozzarella (lauwe saus)",
+      "desc_nl": "Kerstomatensaus, ajuin, pesto, gedroogde tomaten, mozzarella van buffelmelk, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
+      "desc_en": "Cherry tomato sauce, onion, pesto, sun-dried tomatoes, buffalo mozzarella, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
+      "price": "16.00",
+      "kv": ""
+    },
+    {
+      "name": "🍅 Gradisca ai Pomodori Secchi",
+      "desc_nl": "Tomatensaus, verse room, gedroogde tomaten, PARMIGIANO REGGIANO D.O.P, peterselie, parmezaanschilfers, zwarte peper",
+      "desc_en": "Tomato sauce, fresh cream, sun-dried tomatoes, PARMIGIANO REGGIANO D.O.P, parsley, Parmesan shavings, black pepper",
+      "price": "16.00",
       "kv": ""
     },
     {
@@ -31,26 +45,19 @@
       "kv": ""
     },
     {
-      "name": "🍅 Gradisca ai Pomodori Secchi",
-      "desc_nl": "Tomatensaus, verse room, gedroogde tomaten, PARMIGIANO REGGIANO D.O.P, peterselie, parmezaanschilfers, zwarte peper",
-      "desc_en": "Tomato sauce, fresh cream, sun-dried tomatoes, PARMIGIANO REGGIANO D.O.P, parsley, Parmesan shavings, black pepper",
-      "price": "16.00",
-      "kv": ""
-    },
-    {
-      "name": " 🧀Buffels Mozzarella (lauwe saus)",
-      "desc_nl": "Kerstomatensaus, ajuin, pesto, gedroogde tomaten, mozzarella van buffelmelk, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
-      "desc_en": "Cherry tomato sauce, onion, pesto, sun-dried tomatoes, buffalo mozzarella, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
-      "price": "16.00",
-      "kv": ""
-    },
-    {
-      "name": "🧄 Look (Linguine)",
-      "desc_nl": "Olijfolie, look, peterselie, peperoncino pili-pili, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Olive oil, garlic, parsley, peperoncino chilli, PARMIGIANO REGGIANO D.O.P",
-      "price": "13.50",
+      "name": "🍅 Napoli met verse tomaten",
+      "desc_nl": "Tomatensaus, verse tomaten, ajuin, PARMIGIANO REGGIANO D.O.P, basilicum",
+      "desc_en": "Tomato sauce, fresh tomatoes, onion, PARMIGIANO REGGIANO D.O.P, basil",
+      "price": "11.50",
       "kv": "",
       "sold_out": false
+    },
+    {
+      "name": "🍅 Napoli al Pomodoro Fresco (Rigatoni of Linguine)",
+      "desc_nl": "Olijfolie, verse tomaten, ajuin, PARMIGIANO REGGIANO D.O.P, basilicum, zwarte peper",
+      "desc_en": "Olive oil, fresh tomatoes, onion, PARMIGIANO REGGIANO D.O.P, basil, black pepper",
+      "price": "11.50",
+      "kv": ""
     },
     {
       "name": "🧀 4 Kazen (Gnocchi of Rigatoni)",
@@ -72,13 +79,6 @@
       "desc_en": "Tomato sauce, garlic, onion, fresh tomatoes, broccoli, courgette, capers, basil, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "17.00",
       "kv": "KV €23,00🥡🥡 medium bekers "
-    },
-    {
-      "name": "🍆 Aubergine alla Norma con Ricotta",
-      "desc_nl": "Kerstomatensaus, look, ajuin, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basilicum, zwarte peper",
-      "desc_en": "Cherry tomato sauce, garlic, onion, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper",
-      "price": "17.00",
-      "kv": ""
     },
     {
       "name": "🍅 Napoli al Pomodoro Fresco, Zucchine e Pesto",
