@@ -8,19 +8,19 @@
       "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
+      "name": "🍤 Paesana agli Scampi",
+      "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, paddestoelen, look, ajuin, peterselie, PARMIGIANO REGGIANO D.O.P, witte wijn, scampi's, zwarte peper",
+      "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, onion, parsley, PARMIGIANO REGGIANO D.O.P, white wine, king prawns, black pepper",
+      "price": "",
+      "kv": "24,00 🥡🥡 medium bekers "
+    },
+    {
       "name": "🐚 Linguine con le Vongole",
       "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, schelpen",
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, clams",
       "price": "20.00",
       "kv": "",
       "sold_out": false
-    },
-    {
-      "name": "🍤 Paesana agli Scampi",
-      "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, paddestoelen, look, ajuin, peterselie, PARMIGIANO REGGIANO D.O.P, witte wijn, scampi's, zwarte peper",
-      "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, onion, parsley, PARMIGIANO REGGIANO D.O.P, white wine, king prawns, black pepper",
-      "price": "",
-      "kv": "24,00 🥡🥡 medium bekers "
     },
     {
       "name": "🍤🎃 Pompoen met Scampi",
