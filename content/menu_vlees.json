@@ -37,18 +37,18 @@
       "kv": ""
     },
     {
-      "name": "🥩 Panna, Prosciutto e Funghi",
-      "desc_nl": "Gekookte hesp, verse room, champignons, peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
-      "desc_en": "Cooked ham, fresh cream, mushrooms, parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
       "name": "🥩 Carbonara all'Italiana",
       "desc_nl": "Spek, ajuin, gepasteuriseerd eieren, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, zwarte peper",
       "desc_en": "Bacon, onion, pasteurised eggs, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, black pepper",
       "price": "17.00",
       "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Panna, Prosciutto e Funghi",
+      "desc_nl": "Gekookte hesp, verse room, champignons, peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
+      "desc_en": "Cooked ham, fresh cream, mushrooms, parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
+      "price": "17.00",
+      "kv": ""
     },
     {
       "name": "🥩 Diavola",
