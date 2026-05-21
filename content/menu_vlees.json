@@ -65,18 +65,18 @@
       "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
-      "name": "🥩 Paesana",
-      "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, champignons, look, peterselie, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, parsley, PARMIGIANO REGGIANO D.O.P",
-      "price": "17.00",
-      "kv": "KV €23,00🥡🥡 medium bekers "
-    },
-    {
       "name": "🥩 Origineel Carbonara",
       "desc_nl": "Guanciale, gepasteuriseerd eieren, Pecorino",
       "desc_en": "Guanciale, pasteurised eggs, Pecorino",
       "price": "18.00",
       "kv": ""
+    },
+    {
+      "name": "🥩 Paesana",
+      "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, champignons, look, peterselie, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, parsley, PARMIGIANO REGGIANO D.O.P",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Inizio",
