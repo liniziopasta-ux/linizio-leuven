@@ -21,7 +21,8 @@
       "desc_nl": "Traditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
       "desc_en": "Traditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan",
       "price": "17.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🍅 Gnocchi alla Sorrentina",
