@@ -58,18 +58,18 @@
       "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
-      "name": "🥩 Chef",
-      "desc_nl": "Tomatensaus, look, ajuin, spek, broccoli, verse tomaten, basilicum, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Tomato sauce, garlic, onion, bacon, broccoli, fresh tomatoes, basil, PARMIGIANO REGGIANO D.O.P",
-      "price": "17.00",
-      "kv": "KV €23,00🥡🥡 medium bekers "
-    },
-    {
       "name": "🥩 Origineel Carbonara",
       "desc_nl": "Guanciale, gepasteuriseerd eieren, Pecorino",
       "desc_en": "Guanciale, pasteurised eggs, Pecorino",
       "price": "18.00",
       "kv": ""
+    },
+    {
+      "name": "🥩 Chef",
+      "desc_nl": "Tomatensaus, look, ajuin, spek, broccoli, verse tomaten, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, garlic, onion, bacon, broccoli, fresh tomatoes, basil, PARMIGIANO REGGIANO D.O.P",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "name": "🥩 Paesana",
