@@ -95,19 +95,19 @@
       "sold_out": false
     },
     {
-      "name": "🌿 Alla Sasi (Fusilli of Linguine)",
-      "desc_nl": "Olijfolie, peperoncino, look, peterselie, courgettes, geroosterde pijnappelpitten, pesto, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers",
-      "desc_en": "Olive oil, chilli, garlic, parsley, courgette, toasted pine nuts, pesto, PARMIGIANO REGGIANO D.O.P, Parmesan shavings",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
       "name": "🧄 Look (Linguine)",
       "desc_nl": "Olijfolie, look, peterselie, peperoncino pili-pili, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Olive oil, garlic, parsley, peperoncino chilli, PARMIGIANO REGGIANO D.O.P",
       "price": "13.50",
       "kv": "",
       "sold_out": false
+    },
+    {
+      "name": "🌿 Alla Sasi (Fusilli of Linguine)",
+      "desc_nl": "Olijfolie, peperoncino, look, peterselie, courgettes, geroosterde pijnappelpitten, pesto, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers",
+      "desc_en": "Olive oil, chilli, garlic, parsley, courgette, toasted pine nuts, pesto, PARMIGIANO REGGIANO D.O.P, Parmesan shavings",
+      "price": "17.00",
+      "kv": ""
     },
     {
       "name": "🎃 Pompoen zonder room (Linguine)",
