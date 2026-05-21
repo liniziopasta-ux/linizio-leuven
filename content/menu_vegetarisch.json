@@ -1,19 +1,19 @@
 {
   "items": [
     {
-      "name": "🧄🍅 Arrabbiata ",
-      "desc_nl": "Kerstomatensaus, look, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Cherry tomato sauce, garlic, chilli, basil, PARMIGIANO REGGIANO D.O.P",
-      "price": "15.00",
-      "kv": ""
-    },
-    {
       "name": "🍅 Gradisca met verse tomaten",
       "desc_nl": "Tomatensaus, verse room, verse tomaten, PARMIGIANO REGGIANO D.O.P, peterselie, zwarte peper",
       "desc_en": "Tomato sauce, fresh cream, fresh tomatoes, PARMIGIANO REGGIANO D.O.P, parsley, black pepper",
       "price": "12.50",
       "kv": "",
       "sold_out": false
+    },
+    {
+      "name": "🧄🍅 Arrabbiata ",
+      "desc_nl": "Kerstomatensaus, look, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cherry tomato sauce, garlic, chilli, basil, PARMIGIANO REGGIANO D.O.P",
+      "price": "15.00",
+      "kv": ""
     },
     {
       "name": "🍅 Napoli met verse tomaten",
