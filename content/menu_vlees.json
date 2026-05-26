@@ -13,7 +13,7 @@
       "desc_en": "Cooked ham, fresh cream, PARMIGIANO REGGIANO D.O.P",
       "price": "16.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🥩 Bolognese",
@@ -57,7 +57,7 @@
       "desc_en": "Cooked ham, fresh cream, mushrooms, parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "17.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🥩 Diavola",
@@ -79,7 +79,7 @@
       "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, parsley, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
       "kv": "KV €23,00🥡🥡 medium bekers ",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🥩 Inizio",
