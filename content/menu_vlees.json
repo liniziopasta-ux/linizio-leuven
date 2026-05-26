@@ -12,7 +12,8 @@
       "desc_nl": "Gekookte hesp, verse room, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Cooked ham, fresh cream, PARMIGIANO REGGIANO D.O.P",
       "price": "16.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🥩 Bolognese",
@@ -55,7 +56,8 @@
       "desc_nl": "Gekookte hesp, verse room, champignons, peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
       "desc_en": "Cooked ham, fresh cream, mushrooms, parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "17.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🥩 Diavola",
@@ -76,7 +78,8 @@
       "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, champignons, look, peterselie, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, parsley, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
-      "kv": "KV €23,00🥡🥡 medium bekers "
+      "kv": "KV €23,00🥡🥡 medium bekers ",
+      "sold_out": true
     },
     {
       "name": "🥩 Inizio",
