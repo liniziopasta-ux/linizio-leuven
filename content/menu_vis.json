@@ -77,7 +77,7 @@
       "desc_en": "Salmon, onion, cream, broccoli, turmeric, black pepper, PARMIGIANO REGGIANO D.O.P",
       "price": "19.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🐚 Linguine con le Vongole",
