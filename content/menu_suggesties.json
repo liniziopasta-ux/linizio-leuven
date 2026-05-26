@@ -111,7 +111,7 @@
       "desc_en": "Shiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper",
       "price": "20.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🍤 Scampi Shiitake",
