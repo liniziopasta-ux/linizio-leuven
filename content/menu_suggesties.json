@@ -103,7 +103,8 @@
       "desc_nl": "Spaghetti al nero di seppia, kleine inktvisjes, kerstomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper, geroosterd broodkruim",
       "desc_en": "Squid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs",
       "price": "19.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🐟 Shiitake al Salmone",
