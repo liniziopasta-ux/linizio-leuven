@@ -104,7 +104,7 @@
       "desc_en": "Squid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs",
       "price": "19.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🐟 Shiitake al Salmone",
