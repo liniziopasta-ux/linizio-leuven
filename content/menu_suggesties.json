@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "price": 20,
+      "sold_out": false,
+      "name": "🐚 VONGOLE con GNOCCHI",
+      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
+      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams"
+    },
+    {
+      "price": 20,
+      "sold_out": false,
+      "name": " 🐚Nero Seppia MET VONGOLE",
+      "desc_nl": "Spaghetti al nero di seppia,  kers tomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper",
+      "desc_en": "Squid ink spaghetti, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper"
+    },
+    {
+      "name": "🐚 Linguine con Vongole",
+      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
+      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
+      "price": 20,
+      "kv": "",
+      "sold_out": false
+    },
+    {
       "name": "🧀 Extra Burrata",
       "desc_nl": "Voeg burrata toe aan elk recept (behalve visgerechten) voor extra romigheid",
       "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess",
@@ -25,14 +47,6 @@
       "sold_out": false
     },
     {
-      "name": "🐚 Linguine con Vongole",
-      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
-      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
-      "price": 20,
-      "kv": "",
-      "sold_out": false
-    },
-    {
       "name": "🍅 Gnocchi alla Sorrentina",
       "desc_nl": "Olijfolie, verse tomaten, ajuin, look, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basilicum, zwarte peper",
       "desc_en": "Olive oil, fresh tomatoes, onion, garlic, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basil, black pepper",
@@ -47,13 +61,6 @@
       "kv": ""
     },
     {
-      "name": "🍄 Shiitake Linguine",
-      "desc_nl": "Shiitake, look, boter, zwarte peper, Parmezaan kaas",
-      "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
       "name": "🍅 Burrata \"Nieuwkomer\"",
       "desc_nl": "Tomaten (geel of rood afhankelijk van seizoen), burrata, sjalot, extra vierge olijfolie, chilipeper, verse basilicum, zout",
       "desc_en": "Tomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt",
@@ -62,9 +69,9 @@
       "sold_out": false
     },
     {
-      "name": "🥓 Shiitake met Spek Alto Adige IGP",
-      "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
-      "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
+      "name": "🍄 Shiitake Linguine",
+      "desc_nl": "Shiitake, look, boter, zwarte peper, Parmezaan kaas",
+      "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
       "price": "17.00",
       "kv": ""
     },
@@ -73,6 +80,13 @@
       "desc_nl": "Shiitake, look, mascarpone, taleggio, gorgonzola, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
       "desc_en": "Shiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "17.50",
+      "kv": ""
+    },
+    {
+      "name": "🥓 Shiitake met Spek Alto Adige IGP",
+      "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
+      "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
+      "price": "17.00",
       "kv": ""
     },
     {
@@ -92,13 +106,6 @@
       "sold_out": true
     },
     {
-      "name": "🍤 Nero Seppia Scampi",
-      "desc_nl": "Spaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, extra vierge olijfolie, verse basilicum",
-      "desc_en": "Squid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, extra virgin olive oil, fresh basil",
-      "price": 19,
-      "kv": ""
-    },
-    {
       "name": "🐙 Nero Seppia Octopus",
       "desc_nl": "Spaghetti al nero di seppia, kleine inktvisjes, kerstomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper, geroosterd broodkruim",
       "desc_en": "Squid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs",
@@ -115,6 +122,13 @@
       "sold_out": false
     },
     {
+      "name": "🍤 Nero Seppia Scampi",
+      "desc_nl": "Spaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, extra vierge olijfolie, verse basilicum",
+      "desc_en": "Squid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, extra virgin olive oil, fresh basil",
+      "price": 19,
+      "kv": ""
+    },
+    {
       "name": "🍤 Scampi Shiitake",
       "desc_nl": "Scampi, look, olijfolie, shiitake, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas",
       "desc_en": "King prawns, garlic, olive oil, shiitake, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
@@ -127,20 +141,6 @@
       "name": "🍤SCAMPI MET LINGUINE",
       "desc_nl": "Kers tomaten,look, peterselie,scampi's,zwarte peper",
       "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
-    },
-    {
-      "price": 20,
-      "sold_out": false,
-      "name": "🐚 VONGOLE con GNOCCHI",
-      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
-      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams"
-    },
-    {
-      "price": 20,
-      "sold_out": false,
-      "name": " 🐚Nero Seppia MET VONGOLE",
-      "desc_nl": "Spaghetti al nero di seppia,  kers tomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper",
-      "desc_en": "Squid ink spaghetti, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper"
     }
   ],
   "note_nl": "",
