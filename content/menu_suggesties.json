@@ -127,6 +127,20 @@
       "name": "🍤SCAMPI MET LINGUINE",
       "desc_nl": "Kers tomaten,look, peterselie,scampi's,zwarte peper",
       "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
+    },
+    {
+      "price": 20,
+      "sold_out": false,
+      "name": "🐚 Linguine con GNOCCHI",
+      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
+      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams"
+    },
+    {
+      "price": 20,
+      "sold_out": false,
+      "name": " 🐚Nero Seppia MET VONGOLE",
+      "desc_nl": "Spaghetti al nero di seppia,  kers tomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper",
+      "desc_en": "Squid ink spaghetti, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper"
     }
   ],
   "note_nl": "",
