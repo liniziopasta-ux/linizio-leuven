@@ -73,7 +73,8 @@
       "desc_nl": "Shiitake, look, boter, zwarte peper, Parmezaan kaas",
       "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
       "price": "17.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🧀 Shiitake 4 Kazen",
@@ -119,7 +120,7 @@
       "desc_en": "Shiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper",
       "price": "20.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🍤 Nero Seppia Scampi",
@@ -133,7 +134,8 @@
       "desc_nl": "Scampi, look, olijfolie, shiitake, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas",
       "desc_en": "King prawns, garlic, olive oil, shiitake, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
       "price": "20.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "price": 18,
