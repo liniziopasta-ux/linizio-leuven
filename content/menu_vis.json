@@ -33,7 +33,8 @@
       "desc_nl": "Scampi, shiitake, look, olijfolie, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas",
       "desc_en": "King prawns, shiitake, garlic, olive oil, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
       "price": "20.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🍤🦑🐚 Zeevruchten & Scampi",
