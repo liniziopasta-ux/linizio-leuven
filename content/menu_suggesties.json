@@ -81,7 +81,8 @@
       "desc_nl": "Shiitake, look, mascarpone, taleggio, gorgonzola, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
       "desc_en": "Shiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "17.50",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🥓 Shiitake met Spek Alto Adige IGP",
