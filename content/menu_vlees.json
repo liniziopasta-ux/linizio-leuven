@@ -179,7 +179,7 @@
     },
     {
       "price": 17,
-      "sold_out": true,
+      "sold_out": false,
       "name": "🥩CASA “STOOFVLEES RAGÙ OP NAPOLITAANSE WIJZE MET “GNOCCHI “",
       "desc_nl": "Tomatensaus, stoofvlees met 'ragu saus op napolitaanse wijze', ajuin, ricotta, basilicum, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, stew with 'ragu sauce in Neapolitan style', onion, ricotta, basil, PARMIGIANO REGGIANO D.O.P"
