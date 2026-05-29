@@ -89,7 +89,8 @@
       "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
       "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
       "price": "17.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🎃 Burrata & Speck Alto Adige met Pompoencème",
