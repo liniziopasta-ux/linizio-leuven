@@ -2,14 +2,14 @@
   "items": [
     {
       "price": 20,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🐚 VONGOLE con GNOCCHI",
       "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams"
     },
     {
       "price": 20,
-      "sold_out": false,
+      "sold_out": true,
       "name": " 🐚Nero Seppia MET VONGOLE",
       "desc_nl": "Spaghetti al nero di seppia,  kers tomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper",
       "desc_en": "Squid ink spaghetti, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper"
@@ -20,7 +20,7 @@
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
       "price": 20,
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🧀 Extra Burrata",
@@ -74,7 +74,7 @@
       "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
       "price": "17.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🧀 Shiitake 4 Kazen",
@@ -82,7 +82,7 @@
       "desc_en": "Shiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "17.50",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🥓 Shiitake met Spek Alto Adige IGP",
@@ -90,7 +90,7 @@
       "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
       "price": "17.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🎃 Burrata & Speck Alto Adige met Pompoencème",
@@ -122,7 +122,7 @@
       "desc_en": "Shiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper",
       "price": "20.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🍤 Nero Seppia Scampi",
