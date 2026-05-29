@@ -34,7 +34,7 @@
       "desc_en": "King prawns, shiitake, garlic, olive oil, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
       "price": "20.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🍤🦑🐚 Zeevruchten & Scampi",
@@ -86,7 +86,7 @@
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, clams",
       "price": "20.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "price": 18,
