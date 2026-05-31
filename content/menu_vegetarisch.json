@@ -143,6 +143,34 @@
       "desc_en": "Fresh basil, garlic, pine nuts, nutmeg, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "18.00",
       "kv": ""
+    },
+    {
+      "price": 16,
+      "sold_out": false,
+      "name": "🥦 Broccoli (Linguine)",
+      "desc_nl": "\nLinguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
+      "desc_en": "🥦 Broccoli (Linguine)\nLinguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper"
+    },
+    {
+      "price": 16,
+      "sold_out": false,
+      "name": "🍅 Gnocchi alla Sorrentina",
+      "desc_nl": "\nOlijfolie, verse tomaten, ajuin, look, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basilicum, zwarte peper",
+      "desc_en": "🍅 Gnocchi alla Sorrentina\nOlive oil, fresh tomatoes, onion, garlic, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basil, black pepper"
+    },
+    {
+      "price": 16,
+      "sold_out": false,
+      "name": "🍅 Burrata ",
+      "desc_nl": "🍅 Burrata \nTomaten (geel of rood afhankelijk van seizoen), burrata, sjalot, extra vierge olijfolie, chilipeper, verse basilicum, zout",
+      "desc_en": "🍅 Burrata\nTomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt"
+    },
+    {
+      "price": 17.5,
+      "sold_out": false,
+      "name": "🧀 Shiitake 4 Kazen",
+      "desc_nl": "\nShiitake, look, mascarpone, taleggio, gorgonzola, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
+      "desc_en": "🧀 Shiitake 4 Kazen\nShiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper"
     }
   ]
 }
