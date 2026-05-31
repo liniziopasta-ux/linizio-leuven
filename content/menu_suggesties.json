@@ -2,7 +2,7 @@
   "items": [
     {
       "price": 20,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🐚 VONGOLE con GNOCCHI",
       "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams"
