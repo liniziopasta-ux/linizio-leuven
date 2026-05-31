@@ -86,7 +86,7 @@
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, clams",
       "price": "20.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "price": 20,
@@ -96,6 +96,13 @@
       "desc_en": "🐚 VONGOLE con GNOCCHI\nOlive oil, garlic, parsley, cherry tomatoes, vongole, clams"
     },
     {
+      "price": 18,
+      "sold_out": false,
+      "name": "🦑🦀🐚ZEEVRUCHTEN” FRUTTI DI MARE” ",
+      "desc_nl": "\nKers tomatensaus, olijven olie,look, peterselie, zeevruchten, PARMIGIANO REGGIANO D.O.P\n",
+      "desc_en": "Cherry tomato sauce, olive oil, garlic, parsley, seafood, PARMIGIANO REGGIANO D.O.P"
+    },
+    {
       "price": 20,
       "sold_out": false,
       "name": "🐚Nero Seppia MET VONGOLE ",
@@ -103,11 +110,18 @@
       "desc_nl": "🐚Nero Seppia MET VONGOLE\nSpaghetti al nero di seppia, kers tomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper"
     },
     {
-      "price": 18,
+      "price": 19,
       "sold_out": false,
-      "name": "🦑🦀🐚ZEEVRUCHTEN” FRUTTI DI MARE” ",
-      "desc_nl": "\nKers tomatensaus, olijven olie,look, peterselie, zeevruchten, PARMIGIANO REGGIANO D.O.P\n",
-      "desc_en": "Cherry tomato sauce, olive oil, garlic, parsley, seafood, PARMIGIANO REGGIANO D.O.P"
+      "name": "🐙 Nero Seppia Octopus",
+      "desc_nl": " \nSpaghetti al nero di seppia, kleine inktvisjes, kerstomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper, geroosterd broodkruim",
+      "desc_en": "🐙 Nero Seppia Octopus\nSquid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs"
+    },
+    {
+      "price": 19,
+      "sold_out": false,
+      "desc_en": "🍤 Nero Seppia Scampi\nSquid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, extra virgin olive oil, fresh basil",
+      "name": "🍤 Nero Seppia Scampi",
+      "desc_nl": "\nSpaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, extra vierge olijfolie, verse basilicum"
     }
   ]
 }
