@@ -194,16 +194,16 @@
     {
       "price": 17,
       "sold_out": false,
-      "name": "🥓 🍄‍🟫 Shiitake met Spek Alto Adige IGP",
+      "name": "🥩 🥓  Shiitake met Spek Alto Adige IGP",
       "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
-      "desc_en": "🥓 🍄‍🟫 Shiitake met Spek Alto Adige IGP\nShiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese"
+      "desc_en": " Shiitake met Spek Alto Adige IGP\nShiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese"
     },
     {
       "price": 17.5,
       "sold_out": false,
-      "name": "🎃 🥓 Burrasca & Speck Alto Adige met Pompoencème",
-      "desc_nl": "🎃 🥓 Burrata & Speck Alto Adige met Pompoencème\nPompoen, room, krokante reepjes Speck Alto Adige, extra vergine olijfolie, sjalot, burrata, zout, peper",
-      "desc_en": "🎃 🥓 Burrata & Speck Alto Adige met Pompoencème\nPumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper"
+      "name": "🥩 🎃 🥓 Burrasca & Speck Alto Adige met Pompoencème",
+      "desc_nl": " Burrata & Speck Alto Adige met Pompoencème\nPompoen, room, krokante reepjes Speck Alto Adige, extra vergine olijfolie, sjalot, burrata, zout, peper",
+      "desc_en": " Burrata & Speck Alto Adige met Pompoencème\nPumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper"
     }
   ]
 }
