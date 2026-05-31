@@ -9,7 +9,7 @@
     },
     {
       "price": 20,
-      "sold_out": false,
+      "sold_out": true,
       "name": " 🐚Nero Seppia MET VONGOLE",
       "desc_nl": "Spaghetti al nero di seppia,  kers tomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper",
       "desc_en": "Squid ink spaghetti, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper"
@@ -20,7 +20,7 @@
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
       "price": 20,
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🧀 Extra Burrata",
