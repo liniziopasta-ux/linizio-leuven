@@ -171,6 +171,13 @@
       "name": "🧀 Shiitake 4 Kazen",
       "desc_nl": "\nShiitake, look, mascarpone, taleggio, gorgonzola, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
       "desc_en": "🧀 Shiitake 4 Kazen\nShiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "desc_nl": "Shiitake, look, boter, zwarte peper, Parmezaan kaas",
+      "name": "🍄 Shiitake Linguine",
+      "desc_en": "\nShiitake, garlic, butter, black pepper, Parmesan cheese"
     }
   ]
 }
