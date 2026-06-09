@@ -172,7 +172,7 @@
     },
     {
       "price": 18,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🥩PASTA E PATATE ALLA NAPOLETANA ☝️” MET PASTA MISTA” Zoals in Italië ",
       "desc_nl": "Olijfolie, knoflook, ui, wortelen, selderij, tomaat, aardappelen, pancetta,Parmezaanse kaas, scamorzakaas, rozemarijn, peper, peterselie",
       "desc_en": "Olive oil, garlic, onion, carrots, celery, tomato, potatoes, bacon, Parmesan cheese, scamorza cheese, rosemary, pepper, parsley \n"
