@@ -44,7 +44,7 @@
       "desc_en": "Traditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan",
       "price": "17.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🍅 Gnocchi alla Sorrentina",
