@@ -157,7 +157,7 @@
     },
     {
       "price": 17,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🥩CASA “STOOFVLEES RAGÙ OP NAPOLITAANSE WIJZE ",
       "desc_nl": "Tomatensaus, stoofvlees met 'ragu saus op napolitaanse wijze', ajuin, ricotta, basilicum, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, stew with 'ragu sauce in Neapolitan style', onion, ricotta, basil, PARMIGIANO REGGIANO D.O.P",
@@ -193,7 +193,7 @@
     },
     {
       "price": 17,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🥩 🥓  Shiitake met Spek Alto Adige IGP",
       "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
       "desc_en": " Shiitake met Spek Alto Adige IGP\nShiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese"
