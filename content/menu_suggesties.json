@@ -74,7 +74,7 @@
       "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
       "price": "17.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🧀 Shiitake 4 Kazen",
@@ -82,7 +82,7 @@
       "desc_en": "Shiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "17.50",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🥓 Shiitake met Spek Alto Adige IGP",
@@ -90,7 +90,7 @@
       "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
       "price": "17.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🎃 Burrata & Speck Alto Adige met Pompoencème",
@@ -122,7 +122,7 @@
       "desc_en": "Shiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper",
       "price": "20.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🍤 Nero Seppia Scampi",
@@ -137,7 +137,7 @@
       "desc_en": "King prawns, garlic, olive oil, shiitake, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
       "price": "20.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "price": 18,
