@@ -1,14 +1,14 @@
 {
   "items": [
     {
-      "name": "🍆 Aubergine alla Norma con Ricotta",
+      "name": "🍆 AUBERGINE ALLA NORMA CON RICOTTA",
       "desc_nl": "Kerstomatensaus, look, ajuin, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basilicum, zwarte peper",
       "desc_en": "Cherry tomato sauce, garlic, onion, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper",
       "price": "17.00",
       "kv": ""
     },
     {
-      "name": "🧄 Look (Linguine)",
+      "name": "🧄 AGLIO OLIO PREZZEMOLO E PEPERONCINO",
       "desc_nl": "Olijfolie, look, peterselie, peperoncino pili-pili, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Olive oil, garlic, parsley, peperoncino chilli, PARMIGIANO REGGIANO D.O.P",
       "price": "13.50",
@@ -16,10 +16,10 @@
       "sold_out": false
     },
     {
-      "name": " 🧀Buffels Mozzarella (lauwe saus)",
-      "desc_nl": "Kerstomatensaus, ajuin, pesto, gedroogde tomaten, mozzarella van buffelmelk, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
-      "desc_en": "Cherry tomato sauce, onion, pesto, sun-dried tomatoes, buffalo mozzarella, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
-      "price": "16.00",
+      "name": " 🧀BUFALINA (LAUWE SAUS)",
+      "desc_nl": "Kerstomatensaus, ajuin, pesto, gedroogde tomaten, mozzarella van buffelmelk, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper\n\nMozzarella di Bufala – Authentieke Italiaanse mozzarella, gemaakt van buffelmelk. Zacht, sappig en vol van smaak, afkomstig uit Zuid-Italië.",
+      "desc_en": "Cherry tomato sauce, onion, pesto, sun-dried tomatoes, buffalo mozzarella, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper\n\nMozzarella di Bufala – Authentic Italian mozzarella made from buffalo milk. Soft, juicy, and rich in flavor, originating from southern Italy.",
+      "price": 17,
       "kv": ""
     },
     {
