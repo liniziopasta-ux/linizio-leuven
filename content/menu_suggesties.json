@@ -9,6 +9,13 @@
       "sold_out": false
     },
     {
+      "price": 17,
+      "sold_out": false,
+      "name": "🍆 AUBERGINE ALLA NORMA CON RICOTTA",
+      "desc_nl": "Kerstomatensaus, look, ajuin, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basilicum, zwarte peper",
+      "desc_en": "Cherry tomato sauce, garlic, onion, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper"
+    },
+    {
       "price": 20,
       "sold_out": true,
       "name": "🐚 VONGOLE MET GNOCCHI",
@@ -27,22 +34,6 @@
       "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
       "price": 20,
-      "kv": "",
-      "sold_out": true
-    },
-    {
-      "name": "🥦  BROCCOLI MET LINGUINE",
-      "desc_nl": "Linguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
-      "desc_en": "Linguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper",
-      "price": 16,
-      "kv": "",
-      "sold_out": false
-    },
-    {
-      "name": "🧅 GENOVESE",
-      "desc_nl": "Traditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
-      "desc_en": "Traditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan",
-      "price": 18,
       "kv": "",
       "sold_out": true
     },
@@ -137,13 +128,6 @@
       "name": "🍤SCAMPI MET LINGUINE",
       "desc_nl": "Kers tomaten,look, peterselie,scampi's,zwarte peper",
       "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
-    },
-    {
-      "price": 17,
-      "sold_out": false,
-      "name": "🍆 AUBERGINE ALLA NORMA CON RICOTTA",
-      "desc_nl": "Kerstomatensaus, look, ajuin, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basilicum, zwarte peper",
-      "desc_en": "Cherry tomato sauce, garlic, onion, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper"
     }
   ],
   "note_nl": "",
