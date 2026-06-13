@@ -1,47 +1,11 @@
 {
   "items": [
     {
-      "name": "🍤🎃 Pompoen met Scampi",
-      "desc_nl": "Pompoen, look, ajuin, verse room, kerstomaten, scampi, peterselie, pilipili, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Pumpkin, garlic, onion, fresh cream, cherry tomatoes, king prawns, parsley, chilli, PARMIGIANO REGGIANO D.O.P",
-      "price": "18.00",
-      "kv": ""
-    },
-    {
-      "price": 19,
-      "sold_out": false,
-      "name": "🍤SCAMPI MET LINGUINE ",
-      "desc_nl": "Kers tomatens,look, peterselie,scampi's,zwarte peper",
-      "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
-    },
-    {
-      "name": "🍤 Paesana agli Scampi",
-      "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, paddestoelen, look, ajuin, peterselie, PARMIGIANO REGGIANO D.O.P, witte wijn, scampi's, zwarte peper",
-      "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, onion, parsley, PARMIGIANO REGGIANO D.O.P, white wine, king prawns, black pepper",
-      "price": "",
-      "kv": "24,00 🥡🥡 medium bekers "
-    },
-    {
-      "name": "🍤 Scampi",
-      "desc_nl": "Kerstomatensaus, look, peterselie, courgettes, scampi's, PARMIGIANO REGGIANO D.O.P, zwarte peper",
-      "desc_en": "Cherry tomato sauce, garlic, parsley, courgette, king prawns, PARMIGIANO REGGIANO D.O.P, black pepper",
-      "price": "18.00",
-      "kv": "KV €24,00 🥡🥡 medium bekers "
-    },
-    {
-      "name": "🍤 Scampi Shiitake",
-      "desc_nl": "Scampi, shiitake, look, olijfolie, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas",
-      "desc_en": "King prawns, shiitake, garlic, olive oil, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
-      "price": "20.00",
-      "kv": "",
-      "sold_out": false
-    },
-    {
-      "name": "🍤🦑🐚 Zeevruchten & Scampi",
-      "desc_nl": "Kerstomatensaus, look, peterselie, grote scampi's, zeevruchten, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Cherry tomato sauce, garlic, parsley, large king prawns, seafood mix, PARMIGIANO REGGIANO D.O.P",
-      "price": "18.00",
-      "kv": ""
+      "name": "🐟🥦 BROCCOLI MET TONIJN",
+      "desc_nl": "Tomatensaus, verse room, broccoli, tonijn, zwarte peper, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, fresh cream, broccoli, tuna, black pepper, PARMIGIANO REGGIANO D.O.P",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
       "price": 18,
@@ -52,40 +16,82 @@
       "kv": "KV €24,00🥡🥡 medium bekers"
     },
     {
-      "name": "🐟🥦 Broccoli met Tonijn",
-      "desc_nl": "Tomatensaus, verse room, broccoli, tonijn, zwarte peper, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Tomato sauce, fresh cream, broccoli, tuna, black pepper, PARMIGIANO REGGIANO D.O.P",
-      "price": "17.00",
-      "kv": "KV €23,00🥡🥡 medium bekers "
+      "price": 20,
+      "sold_out": true,
+      "name": "🐚NERO SEPPIA MET VONGOLE ",
+      "desc_en": "🐚Nero Seppia MET VONGOLE\nSquid ink spaghetti, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper",
+      "desc_nl": "🐚Nero Seppia MET VONGOLE\nSpaghetti al nero di seppia, kers tomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper"
     },
     {
-      "name": "🐟 Alla Puttanesca",
+      "price": 19,
+      "sold_out": false,
+      "name": "🐙 NERO SEPPIA OCTOPUS",
+      "desc_nl": " \nSpaghetti al nero di seppia, kleine inktvisjes, kerstomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper, geroosterd broodkruim",
+      "desc_en": "🐙 Nero Seppia Octopus\nSquid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs"
+    },
+    {
+      "price": 19,
+      "sold_out": false,
+      "desc_en": "🍤 Nero Seppia Scampi\nSquid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, extra virgin olive oil, fresh basil",
+      "name": "🍤 NERO SEPPIA SCAMPI",
+      "desc_nl": "\nSpaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, extra vierge olijfolie, verse basilicum"
+    },
+    {
+      "name": "🐟 PUTTANESCA",
       "desc_nl": "Kerstomatensaus, olijven, kappers, look, ajuin, ansjovis, basilicum, peterselie, zwarte peper, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Cherry tomato sauce, olives, capers, garlic, onion, anchovies, basil, parsley, black pepper, PARMIGIANO REGGIANO D.O.P",
       "price": "18.00",
       "kv": "24,00 🥡🥡 medium bekers "
     },
     {
-      "name": "🐟 Tonijn",
+      "price": 19,
+      "sold_out": false,
+      "name": "🍤SCAMPI MET LINGUINE ",
+      "desc_nl": "Kers tomatens,look, peterselie,scampi's,zwarte peper",
+      "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
+    },
+    {
+      "name": "🍤🎃 SCAMPI MET POMPOEN",
+      "desc_nl": "Pompoen, look, ajuin, verse room, kerstomaten, scampi, peterselie, pilipili, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Pumpkin, garlic, onion, fresh cream, cherry tomatoes, king prawns, parsley, chilli, PARMIGIANO REGGIANO D.O.P",
+      "price": "18.00",
+      "kv": ""
+    },
+    {
+      "name": "🍤 SCAMPI ALLA PAESANA",
+      "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, paddestoelen, look, ajuin, peterselie, PARMIGIANO REGGIANO D.O.P, witte wijn, scampi's, zwarte peper",
+      "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, onion, parsley, PARMIGIANO REGGIANO D.O.P, white wine, king prawns, black pepper",
+      "price": "",
+      "kv": "24,00 🥡🥡 medium bekers "
+    },
+    {
+      "price": 20,
+      "sold_out": false,
+      "name": "🐟 🍄‍🟫 SHIITAKE MET ZALM",
+      "desc_nl": "\nShiitake, olijfolie, look, zalm, platte peterselie, room, zwarte peper,curcuma",
+      "desc_en": "\nShiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper,curcuma"
+    },
+    {
+      "name": "🐟 TONIJN",
       "desc_nl": "Kerstomatensaus, ajuin, kappers, olijven, tonijn, peterselie, zwarte peper, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Cherry tomato sauce, onion, capers, olives, tuna, parsley, black pepper, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
       "kv": "KV €23,00 🥡🥡 medium bekers "
     },
     {
-      "name": "🐟 Zalm",
-      "desc_nl": "Zalm, ajuin, room, broccoli, curcuma, zwarte peper, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Salmon, onion, cream, broccoli, turmeric, black pepper, PARMIGIANO REGGIANO D.O.P",
-      "price": "19.00",
-      "kv": "",
-      "sold_out": false
+      "name": "🍤 SCAMPI",
+      "desc_nl": "Kerstomatensaus, look, peterselie, courgettes, scampi's, PARMIGIANO REGGIANO D.O.P, zwarte peper",
+      "desc_en": "Cherry tomato sauce, garlic, parsley, courgette, king prawns, PARMIGIANO REGGIANO D.O.P, black pepper",
+      "price": "18.00",
+      "kv": "KV €24,00 🥡🥡 medium bekers "
     },
     {
-      "price": 20,
-      "sold_out": false,
-      "name": "🐟 Shiitake al Salmone",
-      "desc_nl": "\nShiitake, olijfolie, look, zalm, platte peterselie, room, zwarte peper",
-      "desc_en": "\nShiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper"
+      "name": "🍤 🍄‍🟫 SCAMPI SHIITAKE",
+      "desc_nl": "Scampi, shiitake, look, olijfolie, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas",
+      "desc_en": "King prawns, shiitake, garlic, olive oil, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
+      "price": "20.00",
+      "kv": "",
+      "sold_out": false
     },
     {
       "name": "🐚 VONGOLE MET LINGUINE",
@@ -98,16 +104,17 @@
     {
       "price": 20,
       "sold_out": true,
-      "name": "🐚 VONGOLE con GNOCCHI",
+      "name": "🐚 VONGOLE MET GNOCCHI",
       "desc_nl": "\nOlijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
       "desc_en": "🐚 VONGOLE con GNOCCHI\nOlive oil, garlic, parsley, cherry tomatoes, vongole, clams"
     },
     {
-      "price": 20,
-      "sold_out": true,
-      "name": "🐚Nero Seppia MET VONGOLE ",
-      "desc_en": "🐚Nero Seppia MET VONGOLE\nSquid ink spaghetti, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper",
-      "desc_nl": "🐚Nero Seppia MET VONGOLE\nSpaghetti al nero di seppia, kers tomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper"
+      "name": "🐟 ZALM",
+      "desc_nl": "Zalm, ajuin, room, broccoli, curcuma, zwarte peper, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Salmon, onion, cream, broccoli, turmeric, black pepper, PARMIGIANO REGGIANO D.O.P",
+      "price": "19.00",
+      "kv": "",
+      "sold_out": false
     },
     {
       "price": 18,
@@ -117,18 +124,11 @@
       "desc_en": "Cherry tomato sauce, olive oil, garlic, parsley, seafood, PARMIGIANO REGGIANO D.O.P"
     },
     {
-      "price": 19,
-      "sold_out": false,
-      "name": "🐙 Nero Seppia Octopus",
-      "desc_nl": " \nSpaghetti al nero di seppia, kleine inktvisjes, kerstomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper, geroosterd broodkruim",
-      "desc_en": "🐙 Nero Seppia Octopus\nSquid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs"
-    },
-    {
-      "price": 19,
-      "sold_out": false,
-      "desc_en": "🍤 Nero Seppia Scampi\nSquid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, extra virgin olive oil, fresh basil",
-      "name": "🍤 Nero Seppia Scampi",
-      "desc_nl": "\nSpaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, extra vierge olijfolie, verse basilicum"
+      "name": "🍤🦑🐚 ZEEVRUCHTEN & SCAMPI ",
+      "desc_nl": "Kerstomatensaus, look, peterselie, grote scampi's, zeevruchten, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cherry tomato sauce, garlic, parsley, large king prawns, seafood mix, PARMIGIANO REGGIANO D.O.P",
+      "price": "18.00",
+      "kv": ""
     }
   ]
 }
