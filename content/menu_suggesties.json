@@ -128,6 +128,14 @@
       "name": "🍤SCAMPI MET LINGUINE",
       "desc_nl": "Kers tomaten,look, peterselie,scampi's,zwarte peper",
       "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩 🥒 ZUCCHINE E RICOTTA",
+      "desc_nl": "Tomatensaus, courgettes, ajuin, spek, witte wijn, ricottakaas, verse room, peterselie, zwarte peper, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, zucchini, onion, bacon, white wine, ricotta cheese, fresh cream, parsley, black pepper, PARMIGIANO REGGIANO D.O.P",
+      "kv": "KV €23,00🥡🥡 medium bekers"
     }
   ],
   "note_nl": "",
