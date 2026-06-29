@@ -117,8 +117,8 @@
       "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
-      "price": 17,
-      "sold_out": true,
+      "price": 18,
+      "sold_out": false,
       "name": "🥩 🧅 GENOVESE",
       "desc_nl": "🥩 🧅 Genovese\nTraditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
       "desc_en": "🥩 🧅 Genovese\nTraditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan"
