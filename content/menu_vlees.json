@@ -118,7 +118,7 @@
     },
     {
       "price": 18,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🥩 🧅 GENOVESE",
       "desc_nl": "🥩 🧅 Genovese\nTraditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
       "desc_en": "🥩 🧅 Genovese\nTraditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan"
