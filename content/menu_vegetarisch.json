@@ -164,6 +164,13 @@
       "desc_en": "Olive oil, chilli, garlic, parsley, courgette, toasted pine nuts, pesto, PARMIGIANO REGGIANO D.O.P, Parmesan shavings",
       "price": "17.00",
       "kv": ""
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "desc_nl": "\nKerstomatensaus, ajuin, pesto, gedroogde tomaten, mozzarella van buffelmelk, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper Mozzarella di Bufala – Authentieke Italiaanse mozzarella, gemaakt van buffelmelk. Zacht, sappig en vol van smaak, afkomstig uit Zuid-Italië.",
+      "name": "🧀BUFALINA (LAUWE SAUS)",
+      "desc_en": "Cherry tomato sauce, onion, pesto, dried tomatoes, buffalo milk mozzarella, PARMIGIANO REGGIANO D.O.P, parmesan flakes, black pepper Mozzarella di Bufala – Authentic Italian mozzarella, made from buffalo milk. Soft, juicy and full of flavor, originally from southern Italy."
     }
   ]
 }
