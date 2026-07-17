@@ -129,6 +129,13 @@
       "desc_nl": "Tomatensaus, verse tomaten, courgettes, ajuin, PARMIGIANO REGGIANO D.O.P, pesto, zwarte peper",
       "desc_en": "Tomato sauce, fresh tomatoes, courgette, onion, PARMIGIANO REGGIANO D.O.P, pesto, black pepper",
       "kv": "KV €23,00🥡🥡 medium bekers"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "desc_nl": "\nOlijfolie,ajuin,”vlees pancetta”,tomaten saus,room,platte peterselie ,zwarte peper, PARMIGIANO REGGIANO D.O.P,VODKA.",
+      "name": "🥩VODKA",
+      "desc_en": "\nOlive oil, onion, meat pancetta, tomato sauce, cream, flat parsley, black pepper, PARMIGIANO REGGIANO D.O.P, VODKA."
     }
   ],
   "note_nl": "",
