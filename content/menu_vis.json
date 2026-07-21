@@ -66,7 +66,7 @@
     },
     {
       "price": 20,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🐟 🍄‍🟫 SHIITAKE MET ZALM",
       "desc_nl": "\nShiitake, olijfolie, look, zalm, platte peterselie, room, zwarte peper,curcuma",
       "desc_en": "\nShiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper,curcuma"
@@ -91,7 +91,7 @@
       "desc_en": "King prawns, shiitake, garlic, olive oil, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
       "price": "20.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🐚 VONGOLE MET LINGUINE",
