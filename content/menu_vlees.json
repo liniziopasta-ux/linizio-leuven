@@ -192,7 +192,7 @@
     },
     {
       "price": 17,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🥩 🥓  SHIITAKE MET SPEK ALTO ADIGE IGP",
       "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
       "desc_en": " Shiitake met Spek Alto Adige IGP\nShiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese"
