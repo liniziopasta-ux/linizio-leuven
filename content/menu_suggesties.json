@@ -66,7 +66,7 @@
       "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
       "price": "17.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🧀 SHIITAKE 4 FORMAGGI",
@@ -74,7 +74,7 @@
       "desc_en": "Shiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "17.50",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🥓 SHIITAKE MET SPEK ALTO ADIGE I.G.P.",
@@ -82,7 +82,7 @@
       "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
       "price": 17.5,
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🐟 SHIITAKE AL SALMONE",
@@ -90,7 +90,7 @@
       "desc_en": "Shiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper",
       "price": "20.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🍤 SCAMPI SHIITAKE",
