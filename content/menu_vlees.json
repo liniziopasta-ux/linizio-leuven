@@ -45,7 +45,7 @@
     },
     {
       "price": 18,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🥩 🎃 🥓BURRATA € SPEK ALTI ADIGE MET POMPOENCREME",
       "desc_nl": " Burrata & Speck Alto Adige met Pompoencreme\nPompoen, room, krokante reepjes Speck Alto Adige, extra vergine olijfolie, sjalot, burrata, zout, peper",
       "desc_en": " Burrata & Speck Alto Adige met Pompoencème\nPumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper"
@@ -118,7 +118,7 @@
     },
     {
       "price": 18,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🥩 🧅 GENOVESE",
       "desc_nl": "🥩 🧅 Genovese\nTraditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
       "desc_en": "🥩 🧅 Genovese\nTraditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan"
