@@ -143,7 +143,7 @@
       "desc_en": "Cooked ham, fresh cream, PARMIGIANO REGGIANO D.O.P",
       "price": "16.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🥩 🍄‍🟫 PANNA PROSCIUTTO E FUNGHI ( KAAS HESP & CHAMPIGNON)",
@@ -151,7 +151,7 @@
       "desc_en": "Cooked ham, fresh cream, mushrooms, parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "17.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🥩 PAESANA",
@@ -159,7 +159,7 @@
       "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, parsley, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
       "kv": "KV €23,00🥡🥡 medium bekers ",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "price": 17,
@@ -178,7 +178,7 @@
     },
     {
       "price": 17,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🥩PANNA,PROSCIUTTO,BROCCOLI & GORGONZOLA ",
       "desc_nl": "Gekookte hesp, verse room, broccoli, look & gorgonzola, zwarte peper, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Cooked hesp, fresh cream, broccoli, garlic & gorgonzola, black pepper, PARMIGIANO REGGIANO D.O.P"
