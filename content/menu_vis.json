@@ -24,14 +24,14 @@
     },
     {
       "price": 19,
-      "sold_out": false,
+      "sold_out": true,
       "name": "🐙 NERO SEPPIA OCTOPUS",
       "desc_nl": " \nSpaghetti al nero di seppia, kleine inktvisjes, kerstomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper, geroosterd broodkruim",
       "desc_en": "🐙 Nero Seppia Octopus\nSquid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs"
     },
     {
       "price": 19,
-      "sold_out": false,
+      "sold_out": true,
       "desc_en": "🍤 Nero Seppia Scampi\nSquid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, extra virgin olive oil, fresh basil",
       "name": "🍤 NERO SEPPIA SCAMPI",
       "desc_nl": "\nSpaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, extra vierge olijfolie, verse basilicum"
