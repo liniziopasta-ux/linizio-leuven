@@ -2,7 +2,7 @@
   "items": [
     {
       "price": 6,
-      "sold_out": true,
+      "sold_out": false,
       "name": "🧀 EXTRA BURRATA?!",
       "desc_nl": "Voeg burrata toe aan elk recept (behalve visgerechten) voor extra romigheid “Burrata – Verse Italiaanse kaas uit Puglia met een zachte mozzarellabuitenkant en een romige, smeuïge kern. Een echte Italiaanse specialiteit.”",
       "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess “Burrata – A premium fresh Italian cheese from Puglia, featuring a delicate mozzarella shell filled with a luscious, creamy heart. Rich, smooth, and indulgent.”"
@@ -45,7 +45,7 @@
     },
     {
       "price": 18,
-      "sold_out": true,
+      "sold_out": false,
       "name": "🥩 🎃 🥓BURRATA € SPEK ALTI ADIGE MET POMPOENCREME",
       "desc_nl": " Burrata & Speck Alto Adige met Pompoencreme\nPompoen, room, krokante reepjes Speck Alto Adige, extra vergine olijfolie, sjalot, burrata, zout, peper",
       "desc_en": " Burrata & Speck Alto Adige met Pompoencème\nPumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper"
@@ -118,7 +118,7 @@
     },
     {
       "price": 18,
-      "sold_out": true,
+      "sold_out": false,
       "name": "🥩 🧅 GENOVESE",
       "desc_nl": "🥩 🧅 Genovese\nTraditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
       "desc_en": "🥩 🧅 Genovese\nTraditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan"
@@ -143,7 +143,7 @@
       "desc_en": "Cooked ham, fresh cream, PARMIGIANO REGGIANO D.O.P",
       "price": "16.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🥩 🍄‍🟫 PANNA PROSCIUTTO E FUNGHI ( KAAS HESP & CHAMPIGNON)",
@@ -151,7 +151,7 @@
       "desc_en": "Cooked ham, fresh cream, mushrooms, parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "17.00",
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🥩 PAESANA",
@@ -159,7 +159,7 @@
       "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, parsley, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
       "kv": "KV €23,00🥡🥡 medium bekers ",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "price": 17,
@@ -178,14 +178,14 @@
     },
     {
       "price": 17,
-      "sold_out": true,
+      "sold_out": false,
       "name": "🥩PANNA,PROSCIUTTO,BROCCOLI & GORGONZOLA ",
       "desc_nl": "Gekookte hesp, verse room, broccoli, look & gorgonzola, zwarte peper, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Cooked hesp, fresh cream, broccoli, garlic & gorgonzola, black pepper, PARMIGIANO REGGIANO D.O.P"
     },
     {
       "price": 18,
-      "sold_out": true,
+      "sold_out": false,
       "name": "🥩PASTA E PATATE ALLA NAPOLETANA ☝️” MET PASTA MISTA” Zoals in Italië ",
       "desc_nl": "Olijfolie, knoflook, ui, wortelen, selderij, tomaat, aardappelen, pancetta,Parmezaanse kaas, scamorzakaas, rozemarijn, peper, peterselie",
       "desc_en": "Olive oil, garlic, onion, carrots, celery, tomato, potatoes, bacon, Parmesan cheese, scamorza cheese, rosemary, pepper, parsley \n"
