@@ -45,7 +45,7 @@
     },
     {
       "price": 18,
-      "sold_out": true,
+      "sold_out": false,
       "name": "🥩 🎃 🥓BURRATA € SPEK ALTI ADIGE MET POMPOENCREME",
       "desc_nl": " Burrata & Speck Alto Adige met Pompoencreme\nPompoen, room, krokante reepjes Speck Alto Adige, extra vergine olijfolie, sjalot, burrata, zout, peper",
       "desc_en": " Burrata & Speck Alto Adige met Pompoencème\nPumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper"
