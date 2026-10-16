@@ -39,6 +39,11 @@
       "name_nl": "Burrata",
       "name_en": "Burrata",
       "price": "6.00"
+    },
+    {
+      "name_nl": "Pasta van volkoren tarwe ",
+      "name_en": "Wholemeal pasta",
+      "price": 3
     }
   ]
 }
