@@ -66,7 +66,7 @@
       "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
       "price": "17.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🧀 SHIITAKE 4 FORMAGGI",
@@ -74,15 +74,15 @@
       "desc_en": "Shiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "17.50",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🥓 SHIITAKE MET SPEK ALTO ADIGE I.G.P.",
       "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
       "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
-      "price": 17.5,
+      "price": 18,
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🐟 SHIITAKE AL SALMONE",
@@ -98,7 +98,7 @@
       "desc_en": "King prawns, garlic, olive oil, shiitake, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
       "price": "20.00",
       "kv": "",
-      "sold_out": false
+      "sold_out": true
     },
     {
       "name": "🐚 VONGOLE MET LINGUINE",
