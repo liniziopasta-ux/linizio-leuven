@@ -9,14 +9,14 @@
   "avond_en": "Mon–Fri: 18:00–20:45",
   "closures": [
     {
-      "start": "2026-11-09 09:00",
-      "end": "2026-11-11 21:00"
-    },
-    {
       "start": "2026-12-21 00:01",
       "end": "2027-01-03 21:32",
       "reason_nl": "Kerstvakantie ",
       "reason_en": "Holiday "
+    },
+    {
+      "start": "2026-11-09 09:00",
+      "end": "2026-11-11 21:00"
     }
   ],
   "middag_nl": "Ma–Vr: 12:00–13:15",
