@@ -1734,7 +1734,7 @@ body.cart-open {
 /* Action buttons */
 .receipt-actions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0.6rem;
   margin-top: 0.8rem;
 }
@@ -2008,7 +2008,16 @@ body.cart-open {
 /* ── PICKUP TIME PICKER ── */
 .pickup-time-row {
   margin: 0.8rem 0 0.4rem;
-  display: block;
+  display: none;   /* revealed when the customer taps WhatsApp */
+}
+.pickup-time-row.show { display: block; }
+#pickup-label { margin-top: 0.8rem; }
+.pickup-confirm-note {
+  margin: 0.5rem 0 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--smoke);
 }
 
 .pickup-time-label {
@@ -2021,6 +2030,7 @@ body.cart-open {
   margin-bottom: 0.4rem;
 }
 
+#pickup-date-select,
 #pickup-time-select {
   width: 100%;
   padding: 0.7rem 1rem;
@@ -2038,6 +2048,7 @@ body.cart-open {
   cursor: pointer;
 }
 
+#pickup-date-select:focus,
 #pickup-time-select:focus {
   outline: none;
   border-color: var(--terracotta);
@@ -2178,6 +2189,83 @@ body.cart-open {
   cursor: not-allowed;
 }
 
+/* ── ORDER AVAILABILITY (closed days / ordering windows) ── */
+body.ordering-closed .add-to-cart,
+body.ordering-closed .btn-single,
+body.ordering-closed .btn-kv,
+body.ordering-closed .supp-add-btn {
+  opacity: 0.35;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+body.ordering-closed #cart-bar { display: none; }
+
+.closed-banner {
+  display: none;
+  background: rgba(139,58,58,0.08);
+  border-left: 3px solid #8B3A3A;
+  border-radius: 0 4px 4px 0;
+  padding: 0.8rem 1rem;
+  margin: 0 0 1.4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--warm-black);
+}
+.closed-banner strong { color: #8B3A3A; letter-spacing: 0.04em; text-transform: uppercase; }
+body.ordering-closed .closed-banner { display: block; }
+.ordering .closed-banner { margin-top: 1.5rem; background: rgba(196,98,45,0.15); border-left-color: var(--terracotta); color: rgba(245,239,224,0.85); }
+.ordering .closed-banner strong { color: var(--gold-light); }
+.order-timing .prepay-note { color: rgba(245,239,224,0.6); letter-spacing: 0.02em; line-height: 1.6; font-size: 0.7rem; }
+
+.prepay-note {
+  margin-top: 0.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--smoke);
+}
+#modal-prepay { margin: 0.8rem 0 0; }
+#modal-order-hint {
+  display: none;
+  margin-top: 0.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--warm-black);
+}
+
+#modal-call-btn {
+  background: var(--warm-black);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.9rem 0.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 4px;
+}
+
+#modal-call-btn .contact-val { font: inherit; letter-spacing: inherit; white-space: nowrap; }
+
+/* Call button label: rolls "Bestellen & afhalen?" → "Bel 016 / 20.20.56" only next to "Toon aan raam"
+   (class .rolling); otherwise it stays on the "Bel …" line. The whole button dials. */
+.call-ticker { display: block; height: 1.6em; line-height: 1.6em; overflow: hidden; text-align: center; }
+.call-ticker-track { display: block; transform: translateY(-1.6em); }
+#modal-call-btn.rolling .call-ticker-track { transform: none; animation: order-ticker-roll 8s ease-in-out infinite; }
+.call-ticker-item { display: block; height: 1.6em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#modal-call-btn { min-width: 0; padding-left: 0.3rem; padding-right: 0.3rem; font-size: 0.6rem; letter-spacing: 0.04em; }
+@media (max-width: 360px) { #modal-call-btn { font-size: 0.54rem; letter-spacing: 0.02em; } .call-ticker-ico { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  #modal-call-btn.rolling .call-ticker-track { animation: none; transform: translateY(-1.6em); }   /* show "Bel …" */
+}
+
 /* ── ORDER TIMING NOTICE ── */
 .order-timing-notice {
   background: rgba(196,98,45,0.07);
@@ -2195,6 +2283,19 @@ body.cart-open {
 .order-timing-notice strong {
   color: var(--terracotta);
   font-weight: 700;
+}
+
+/* One-line ticker: WhatsApp message, then the call message rolls up */
+.order-ticker { height: 1.6em; overflow: hidden; }
+.order-ticker-track { animation: order-ticker-roll 8s ease-in-out infinite; }
+.order-ticker-item { height: 1.6em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@keyframes order-ticker-roll {
+  0%, 40%   { transform: translateY(0); }
+  50%, 90%  { transform: translateY(-1.6em); }
+  100%      { transform: translateY(-3.2em); }   /* copy of the first line → seamless loop */
+}
+@media (prefers-reduced-motion: reduce) {
+  .order-ticker-track { animation: none; }
 }
 </style>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -2361,6 +2462,7 @@ body.cart-open {
   <div class="section-inner">
     <span class="section-label" data-tx="section-label-menu">Wat we serveren</span>
     <h2 class="section-title" data-tx="section-title-menu">Wat smaakt vandaag?</h2>
+    <div class="closed-banner" id="closed-banner-menu"></div>
 
     <div class="menu-tabs-wrap">
       <div class="menu-tabs" role="tablist">
@@ -2508,6 +2610,7 @@ body.cart-open {
   <div class="section-inner">
     <span class="section-label" data-tx="section-label-order">Hoe werkt het?</span>
     <h2 class="section-title" data-tx="section-title-order">Zo eenvoudig bestelt u</h2>
+    <div class="closed-banner" id="closed-banner-order"></div>
 
     <div class="order-grid">
       <div class="order-steps">
@@ -2515,7 +2618,7 @@ body.cart-open {
           <div class="order-step-num">01</div>
           <div class="order-step-content">
             <h4 data-tx="step1-title">Stuur uw bestelling</h4>
-            <p data-tx="step1-desc">Via WhatsApp, Messenger of SMS tijdens de besteluren. Bellen kan altijd overdag en 's avonds. 10+ pasta's? 1 dag op voorhand.</p>
+            <p data-tx="step1-desc">Via WhatsApp, Messenger of SMS tijdens de besteluren. Bellen kan van 09:30 tot 20:45. 10+ pasta's? 1 dag op voorhand.</p>
           </div>
         </div>
         <div class="order-step reveal">
@@ -2551,9 +2654,10 @@ body.cart-open {
         </div>
         <div class="order-timing">
           <p data-tx="order-timing"><strong>Besteluren:</strong> 09:30–10:30 &amp; 13:30–16:30<br>
-            <strong>Bellen:</strong> altijd overdag en 's avonds 🌛<br>
+            <strong>Bellen:</strong> 09:30–20:45<br>
             <strong>Betaling:</strong> Cash · Payconiq · QR-code
           </p>
+          <p class="prepay-note" id="prepay-note"></p>
         </div>
       </div>
     </div>
@@ -3025,7 +3129,7 @@ const TRANSLATIONS = {
     'contact-wa-label': 'WhatsApp / SMS',
     'contact-fb-label': 'Facebook Messenger',
     'contact-fb-val': 'L\'inizio Leuven Pasta Bar',
-    'order-timing': '<strong>Besteluren:</strong> 09:30 – 10:30 & 13:30 – 16:30<br><strong>Bellen</strong> kan altijd overdag en \'s avonds<br><strong>Betaling:</strong> Cash · Payconiq · QR-code',
+    'order-timing': '<strong>Besteluren:</strong> 09:30 – 10:30 & 13:30 – 16:30<br><strong>Bellen:</strong> 09:30 – 20:45<br><strong>Betaling:</strong> Cash · Payconiq · QR-code',
 
     /* HOURS */
     'section-label-hours': 'Wanneer vindt u ons?',
@@ -3054,7 +3158,9 @@ const TRANSLATIONS = {
     'footer-col2-title': 'Informatie',
     'footer-bottom1': '© 2025 L\'inizio Pasta Bar · Leuven · Alle prijzen BTW inclusief',
     'footer-bottom2': 'Vers bereid · Geen levering · Afhalen aan het raam',
-    'order-timing-label': 'Besteluren:',
+    'order-timing-label': 'Bestel via WhatsApp:',
+    'order-call-label': 'Bestel via telefoon:',
+    'order-call-hours': '09:30–20:45',
     'order-timing-hours': '09:30–10:30 & 13:30–16:30',
     'sold-out-badge': 'Uitverkocht',
     'pickup-label': 'Gewenste ophaaltijd',
@@ -3291,7 +3397,7 @@ const TRANSLATIONS = {
     'contact-wa-label': 'WhatsApp / SMS',
     'contact-fb-label': 'Facebook Messenger',
     'contact-fb-val': 'L\'inizio Leuven Pasta Bar',
-    'order-timing': '<strong>Order hours:</strong> 09:30 – 10:30 & 13:30 – 16:30<br><strong>Phone calls</strong> welcome any time during the day or evening<br><strong>Payment:</strong> Cash · Payconiq · QR code',
+    'order-timing': '<strong>Order hours:</strong> 09:30 – 10:30 & 13:30 – 16:30<br><strong>Phone orders:</strong> 09:30 – 20:45<br><strong>Payment:</strong> Cash · Payconiq · QR code',
 
     /* HOURS */
     'section-label-hours': 'When can you find us?',
@@ -3320,7 +3426,9 @@ const TRANSLATIONS = {
     'footer-col2-title': 'Information',
     'footer-bottom1': '© 2025 L\'inizio Pasta Bar · Leuven · All prices include VAT',
     'footer-bottom2': 'Made fresh · No delivery · Takeaway at the window',
-    'order-timing-label': 'Order hours:',
+    'order-timing-label': 'Order via WhatsApp:',
+    'order-call-label': 'Order by phone:',
+    'order-call-hours': '09:30–20:45',
     'order-timing-hours': '09:30–10:30 & 13:30–16:30',
     'sold-out-badge': 'Sold out',
     'pickup-label': 'Preferred pickup time',
@@ -3731,6 +3839,7 @@ function setLang(lang) {
 const cart = [];  // [{name, price, qty}]
 
 function addToCart(btn, name, price) {
+  if (window._getOrderState && window._getOrderState().closed) return;
   var existing = cart.find(function(i) { return i.name === name; });
   if (existing) {
     existing.qty++;
@@ -3915,9 +4024,13 @@ function openOrderModal() {
   setText('receipt-total-label', isEN ? 'Total' : 'Totaal');
   setText('receipt-total-amount', fmt(total));
   setText('receipt-item-count', totalCount + (isEN ? ' item(s)' : ' gerecht(en)'));
-  setText('modal-wa-label', 'WhatsApp');
+  // Fresh open → start at step 1; refresh of an open cart (language switch) → keep the customer's choices
+  var wasOpen = el('order-modal') && el('order-modal').classList.contains('open');
+  if (!wasOpen) resetPickupPicker();
+  else { var pr = el('pickup-time-row'); setPickupStep(!!(pr && pr.classList.contains('show'))); }
   setText('modal-chef-label', isEN ? 'Show at window' : 'Toon aan raam');
   setText('modal-close-label', isEN ? 'Close' : 'Sluiten');
+  if (window._applyOrderState) window._applyOrderState();
 
   var list = el('receipt-items');
   if (!list) { el('order-modal').classList.add('open'); return; }
@@ -4005,9 +4118,36 @@ function closeChefScreen() {
   document.getElementById('chef-screen').classList.remove('open');
 }
 
+/* Pickup time is only asked for WhatsApp orders: first tap on WhatsApp
+   reveals the picker, the second tap sends the order. */
+function setPickupStep(open) {
+  var isEN = (typeof currentLang !== 'undefined' && currentLang === 'en');
+  var row = document.getElementById('pickup-time-row');
+  var lbl = document.getElementById('modal-wa-label');
+  if (row) row.classList.toggle('show', open);
+  if (lbl) lbl.textContent = open ? (isEN ? 'Send via WhatsApp' : 'Verstuur via WhatsApp') : 'WhatsApp';
+  // Once the customer has chosen WhatsApp, the call option steps aside (back on the next cart open)
+  var call = document.getElementById('modal-call-btn');
+  if (call && open) call.style.display = 'none';
+}
+
+function onWhatsAppClick() {
+  var row = document.getElementById('pickup-time-row');
+  if (row && !row.classList.contains('show')) {
+    setPickupStep(true);
+    var ps = document.getElementById('pickup-time-select');
+    if (ps) { row.scrollIntoView({ block: 'nearest' }); ps.focus(); }
+    return;
+  }
+  sendWhatsApp();
+}
+
 function resetPickupPicker() {
   var ps = document.getElementById('pickup-time-select');
   if (ps) ps.value = '';
+  var pd = document.getElementById('pickup-date-select');
+  if (pd && pd.options.length) { pd.selectedIndex = 0; if (window._applyOrderState) window._applyOrderState(); }
+  setPickupStep(false);
 }
 
 function closeOrderModal(e) {
@@ -4034,6 +4174,13 @@ function closeOrderModal(e) {
 
 function sendWhatsApp() {
   var isEN = (typeof currentLang !== 'undefined' && currentLang === 'en');
+
+  // ── Closed day / planned closure (see ORDER AVAILABILITY) ────────────────
+  if (window._getOrderState && window._getOrderState().closed) {
+    window._applyOrderState();
+    alert(isEN ? 'We are closed — ordering is not possible right now.' : 'We zijn gesloten — bestellen is nu niet mogelijk.');
+    return;
+  }
 
   // ── Order window check (Belgium time / Europe/Brussels) ──────────────────
   // Uses Intl.DateTimeFormat - works on ALL browsers including iOS Safari
@@ -4078,6 +4225,14 @@ function sendWhatsApp() {
 
   var pickupSelect = document.getElementById('pickup-time-select');
   var pickupTime = pickupSelect ? pickupSelect.value : '';
+  var pickupDateSelect = document.getElementById('pickup-date-select');
+  var pickupDate = pickupDateSelect ? pickupDateSelect.value : '';   // YYYY-MM-DD (Belgian calendar day)
+  if (pickupDateSelect && !pickupDate) {
+    pickupDateSelect.style.borderColor = '#C4622D';
+    pickupDateSelect.focus();
+    setTimeout(function() { pickupDateSelect.style.borderColor = ''; }, 2500);
+    return;
+  }
 
   // Validate time selection
   if (!pickupTime) {
@@ -4103,8 +4258,9 @@ function sendWhatsApp() {
   lines.push('');
   lines.push((isEN ? 'Total' : 'Totaal') + ': ' + fmt(total));
   lines.push('');
-  // Get today's date formatted nicely
-  var now = new Date();
+  // Chosen pickup date (falls back to today), formatted nicely
+  var dm = String(pickupDate).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  var now = dm ? new Date(+dm[1], +dm[2] - 1, +dm[3]) : new Date();
   var days_nl = ['Zondag','Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag'];
   var days_en = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   var months_nl = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
@@ -4112,12 +4268,12 @@ function sendWhatsApp() {
   var dayName = isEN ? days_en[now.getDay()] : days_nl[now.getDay()];
   var monthName = isEN ? months_en[now.getMonth()] : months_nl[now.getMonth()];
   var dateStr = dayName + ' ' + now.getDate() + ' ' + monthName + ' ' + now.getFullYear();
-  lines.push((isEN ? 'Date: ' : 'Datum: ') + dateStr);
+  lines.push((isEN ? 'Preferred pickup date: ' : 'Gewenste ophaaldag: ') + dateStr);
   lines.push((isEN ? 'Preferred pickup time: ' : 'Gewenste ophaaltijd: ') + pickupTime);
   lines.push('');
   lines.push(isEN
-    ? 'I understand that the pickup time is subject to confirmation based on availability.'
-    : 'Ik begrijp dat de ophaaltijd afhankelijk is van beschikbaarheid en door jullie bevestigd wordt.');
+    ? 'I understand that the pickup date and time are subject to confirmation based on availability.'
+    : 'Ik begrijp dat de ophaaldag en -tijd afhankelijk zijn van beschikbaarheid en door jullie bevestigd worden.');
   var encoded = encodeURIComponent(lines.join('\n'));
   window.open('https://wa.me/32485736362?text=' + encoded, '_blank');
 }
@@ -4160,8 +4316,11 @@ setLang = function(lang) {
         <span class="cart-total-amount" id="cart-grand-total">€0,00</span>
       </div>
       <div class="order-timing-notice">
-        🕐 <strong data-tx="order-timing-label">Besteluren:</strong>
-        <span data-tx="order-timing-hours">09:30–10:30 &amp; 13:30–16:30</span>
+        <div class="order-ticker"><div class="order-ticker-track">
+          <div class="order-ticker-item">💬 <strong data-tx="order-timing-label">Bestel via WhatsApp:</strong> <span data-tx="order-timing-hours">09:30–10:30 &amp; 13:30–16:30</span></div>
+          <div class="order-ticker-item">📞 <strong data-tx="order-call-label">Bestel via telefoon:</strong> <span data-tx="order-call-hours">09:30–20:45</span></div>
+          <div class="order-ticker-item" aria-hidden="true">💬 <strong data-tx="order-timing-label">Bestel via WhatsApp:</strong> <span data-tx="order-timing-hours">09:30–10:30 &amp; 13:30–16:30</span></div>
+        </div></div>
       </div>
       <div class="cart-actions">
         <button id="cart-clear-btn" onclick="clearCart()">Wis alles</button>
@@ -4199,8 +4358,10 @@ setLang = function(lang) {
         <span class="receipt-total-amount" id="receipt-total-amount">€0,00</span>
       </div>
 
-      <!-- Pickup time picker -->
+      <!-- Pickup date + time picker (WhatsApp orders) -->
       <div class="pickup-time-row" id="pickup-time-row">
+        <span class="pickup-time-label" id="pickup-date-label">Gewenste ophaaldag</span>
+        <select id="pickup-date-select"></select>
         <span class="pickup-time-label" id="pickup-label">Gewenste ophaaltijd</span>
         <select id="pickup-time-select">
           <option value="" id="pickup-placeholder">-- Kies een tijdstip --</option>
@@ -4227,16 +4388,25 @@ setLang = function(lang) {
             <option value="20:45">20:45</option>
           </optgroup>
         </select>
+        <p class="pickup-confirm-note" id="pickup-confirm-note">Datum en tijd worden nog bevestigd door L'inizio.</p>
       </div>
 
+      <div id="modal-order-hint"></div>
+      <p class="prepay-note" id="modal-prepay"></p>
+
       <div class="receipt-actions">
-        <button id="modal-whatsapp-btn" onclick="sendWhatsApp()">
+        <button id="modal-whatsapp-btn" onclick="onWhatsAppClick()">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           <span id="modal-wa-label">WhatsApp</span>
         </button>
         <button id="modal-show-chef-btn" onclick="showChefScreen()">
           🧑‍🍳 <span id="modal-chef-label">Toon aan raam</span>
         </button>
+        <a id="modal-call-btn" href="tel:+3216202056" aria-label="Bel 016 / 20.20.56"><span class="call-ticker"><span class="call-ticker-track">
+          <span class="call-ticker-item"><span class="call-ticker-ico">🥡 </span><span class="call-ticker-q">Bestellen &amp; afhalen?</span></span>
+          <span class="call-ticker-item"><span class="call-ticker-ico">📞 </span><span class="call-ticker-label">Bel</span> <span class="contact-val">016 / 20.20.56</span></span>
+          <span class="call-ticker-item" aria-hidden="true"><span class="call-ticker-ico">🥡 </span><span class="call-ticker-q">Bestellen &amp; afhalen?</span></span>
+        </span></span></a>
         <button id="modal-close-btn" onclick="closeOrderModal()" id="modal-close-btn">
           <span id="modal-close-label">Sluiten</span>
         </button>
@@ -4270,6 +4440,424 @@ if (window.netlifyIdentity) {
     }
   });
 }
+</script>
+<script>
+/* ══════════════════════════════════════════════════════
+   ORDER AVAILABILITY
+   Shows only the ordering options that apply right now (Belgium time):
+   • WhatsApp / SMS / Messenger — 09:30–10:30 & 13:30–16:30
+   • "Toon aan raam"            — 12:00–13:15 & 18:00–20:45 (service window open)
+   • Calling                    — 09:30–20:45 on an open day (ordering hours)
+   Closed = weekend, Belgian public holidays (calculated for every year,
+   unless the owner marks one as open), and closures planned in the CMS
+   (hours.json → closures / open_holidays). On a closed day ordering is
+   switched off: add-to-cart disabled, phone/WhatsApp hidden, banner shown.
+══════════════════════════════════════════════════════ */
+(function() {
+  var SERVICES = [
+    { id: 'lunch',  start: 12*60, end: 13*60+15 },
+    { id: 'dinner', start: 18*60, end: 20*60+45 }
+  ];
+  var WA_WINDOWS = [
+    { start: 9*60+30,  end: 10*60+30 },
+    { start: 13*60+30, end: 16*60+30 }
+  ];
+  var ORDER_HOURS = { start: 9*60+30, end: 20*60+45 };   // phone orders accepted; outside = closed
+  var WINDOW_LEAD = 0;    // "Toon aan raam" appears this many minutes before opening (window opens 12:00 / 18:00)
+  var NOTICE_DAYS = 7;    // announce closures this many days ahead
+
+  var PREPAY = {
+    nl: 'Om een vlotte planning en voorbereiding te garanderen, worden vooraf geplaatste bestellingen via sms of WhatsApp pas bevestigd nadat de betaling via de betaallink is ontvangen. Bedankt voor uw begrip.',
+    en: 'To ensure efficient planning and preparation, advance orders placed via SMS or WhatsApp will only be confirmed once payment has been received through the payment link. Thank you for your understanding.'
+  };
+  var DAYS = {
+    nl: ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'],
+    en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+  };
+
+  var DAY_MS = 864e5;
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function dateKey(d) { return d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()); }
+  function addDays(d, n) { return new Date(d.getTime() + n * DAY_MS); }
+  function fmtMins(m) { return pad(Math.floor(m / 60)) + ':' + pad(m % 60); }
+  function lang() { return (typeof currentLang !== 'undefined' && currentLang === 'en') ? 'en' : 'nl'; }
+
+  /* Belgian calendar date (as a UTC-midnight Date) + minutes since midnight.
+     Intl formatToParts — the toLocaleString approach breaks on iOS Safari. */
+  function brusselsParts(when) {
+    try {
+      var p = {};
+      new Intl.DateTimeFormat('en', {
+        timeZone: 'Europe/Brussels', year: 'numeric', month: 'numeric', day: 'numeric',
+        hour: 'numeric', minute: 'numeric', hour12: false
+      }).formatToParts(when).forEach(function(x) { p[x.type] = x.value; });
+      var h = parseInt(p.hour, 10); if (h === 24) h = 0;
+      var r = { date: new Date(Date.UTC(+p.year, +p.month - 1, +p.day)), mins: h * 60 + parseInt(p.minute, 10) };
+      if (isNaN(r.date.getTime()) || isNaN(r.mins)) throw new Error('bad parts');
+      return r;
+    } catch (e) {
+      return { date: new Date(Date.UTC(when.getFullYear(), when.getMonth(), when.getDate())), mins: when.getHours() * 60 + when.getMinutes() };
+    }
+  }
+  /* Minutes on a continuous Belgian wall-clock scale, so closures compare simply */
+  function absMins(date, mins) { return date.getTime() / 60000 + mins; }
+
+  /* ── Belgian public holidays (computed, valid for any year) ── */
+  function easterSunday(y) {
+    var a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4,
+        f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3),
+        h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4,
+        l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451),
+        n = h + l - 7 * m + 114;
+    return new Date(Date.UTC(y, Math.floor(n / 31) - 1, (n % 31) + 1));
+  }
+  var holidayCache = {};
+  function holidaysOf(y) {
+    if (holidayCache[y]) return holidayCache[y];
+    var set = {}, easter = easterSunday(y);
+    // New Year, Labour Day, National Day, Assumption, All Saints, Armistice, Christmas
+    [[0, 1], [4, 1], [6, 21], [7, 15], [10, 1], [10, 11], [11, 25]].forEach(function(md) {
+      set[dateKey(new Date(Date.UTC(y, md[0], md[1])))] = true;
+    });
+    // Easter Monday, Ascension, Whit Monday
+    [1, 39, 50].forEach(function(n) { set[dateKey(addDays(easter, n))] = true; });
+    return (holidayCache[y] = set);
+  }
+
+  /* ── CMS data: planned closures + holidays the owner opens on ── */
+  function parseWhen(str, isEnd) {
+    if (!str) return null;
+    var s = String(str).trim();
+    var m = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})(?:[ T](\d{1,2}):(\d{2}))?$/);
+    if (m) {
+      var day = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+      if (!m[4]) return absMins(day, isEnd ? 24 * 60 : 0);   // date only → whole day
+      return absMins(day, (+m[4]) * 60 + (+m[5]));
+    }
+    var d = new Date(s);                                    // ISO with time zone → Belgian time
+    if (isNaN(d.getTime())) return null;
+    var b = brusselsParts(d);
+    return absMins(b.date, b.mins);
+  }
+  function readClosures() {
+    var d = window._hoursData || {};
+    var list = [];
+    (Array.isArray(d.closures) ? d.closures : []).forEach(function(c) {
+      if (!c) return;
+      var start = parseWhen(c.start, false), end = parseWhen(c.end, true);
+      if (start === null || end === null || end <= start) return;
+      list.push({ start: start, end: end, reason_nl: (c.reason_nl || '').trim(), reason_en: (c.reason_en || '').trim() });
+    });
+    var openDays = {};
+    (Array.isArray(d.open_holidays) ? d.open_holidays : []).forEach(function(v) {
+      var m = String(v || '').match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+      if (m) openDays[m[1] + '-' + pad(+m[2]) + '-' + pad(+m[3])] = true;
+    });
+    return { closures: list, openDays: openDays };
+  }
+
+  /* Which services run on a given Belgian date */
+  function dayInfo(date, cms) {
+    var key = dateKey(date), wd = date.getUTCDay();
+    var weekend = (wd === 0 || wd === 6);
+    var holiday = !weekend && !!holidaysOf(date.getUTCFullYear())[key] && !cms.openDays[key];
+    var services = SERVICES.map(function(s) {
+      var closure = null;
+      if (!weekend && !holiday) {
+        cms.closures.some(function(c) {
+          if (c.start < absMins(date, s.end) && c.end > absMins(date, s.start)) { closure = c; return true; }
+          return false;
+        });
+      }
+      return { id: s.id, start: s.start, end: s.end, open: !weekend && !holiday && !closure, closure: closure };
+    });
+    return {
+      date: date, weekend: weekend, holiday: holiday, services: services,
+      open: services.some(function(s) { return s.open; })
+    };
+  }
+
+  /* First moment ordering is possible again (later today if it's still early) */
+  function nextOpening(now, cms) {
+    for (var i = 0; i <= 60; i++) {
+      if (i === 0 && now.mins >= ORDER_HOURS.start) continue;
+      var info = dayInfo(addDays(now.date, i), cms);
+      if (info.open) return { date: info.date, days: i, time: ORDER_HOURS.start };
+    }
+    return null;
+  }
+
+  function getOrderState() {
+    var cms = readClosures();
+    var now = brusselsParts(new Date()), t = now.mins;
+    var today = dayInfo(now.date, cms);
+    var remaining = today.services.filter(function(s) { return s.end >= t; });
+    var remainingOpen = remaining.filter(function(s) { return s.open; });
+    // Closed: weekend/holiday/full-day closure, outside ordering hours (09:30–20:45),
+    // or a closure takes out the rest of today
+    var closed = !today.open || t < ORDER_HOURS.start || t > ORDER_HOURS.end ||
+                 (remaining.length > 0 && remainingOpen.length === 0);
+    var inWA = WA_WINDOWS.some(function(w) { return t >= w.start && t <= w.end; });
+    return {
+      closed: closed,
+      call: !closed,
+      whatsapp: !closed && inWA && today.services.some(function(s) { return s.open && s.start > t; }),
+      window: !closed && today.services.some(function(s) { return s.open && t >= s.start - WINDOW_LEAD && t <= s.end; }),
+      openServices: today.services.filter(function(s) { return s.open; }).map(function(s) { return s.id; }),
+      today: today, now: now, cms: cms,
+      reopen: closed ? nextOpening(now, cms) : null
+    };
+  }
+
+  /* ── Text helpers ── */
+  function dayLabel(date, L) {
+    return DAYS[L][date.getUTCDay()] + ' ' + pad(date.getUTCDate()) + '/' + pad(date.getUTCMonth() + 1);
+  }
+  function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+  function reasonOf(c, L) {
+    if (!c) return '';
+    var r = L === 'en' ? (c.reason_en || c.reason_nl) : (c.reason_nl || c.reason_en);
+    return r ? ' — ' + r : '';
+  }
+
+  /* Closure lines for the next NOTICE_DAYS days (weekends are a given, not announced) */
+  function closureNotices(st, L) {
+    var entries = [];
+    var lastWeekday = -1;   // index of the last weekday checked
+    for (var i = 0; i <= 60; i++) {
+      var info = dayInfo(addDays(st.now.date, i), st.cms);
+      if (info.weekend) continue;
+      // past the notice window, only keep going to find where an ongoing closure ends
+      if (i > NOTICE_DAYS) {
+        var tail = entries[entries.length - 1];
+        if (!tail || !tail.full || tail.to.getTime() !== addDays(st.now.date, lastWeekday).getTime()) break;
+      }
+      lastWeekday = i;
+      var dayServices = info.services;
+      if (i === 0 && info.open) {
+        // today: only mention services still to come
+        dayServices = info.services.filter(function(s) { return s.end >= st.now.mins; });
+        if (!dayServices.length) continue;
+      }
+      var closedSvcs = dayServices.filter(function(s) { return !s.open; });
+      if (!closedSvcs.length) continue;
+      var c = (closedSvcs.filter(function(s) { return s.closure; })[0] || {}).closure || null;
+      // "full" compares with the whole day, so an evening-only closure stays "'s avonds gesloten"
+      var full = info.holiday || info.services.every(function(s) { return !s.open; });
+      var last = entries[entries.length - 1];
+      // merge consecutive full closures (a weekend in between still counts as consecutive)
+      if (full && last && last.full && !last.holiday && !info.holiday && last.closure === c &&
+          Math.round((info.date - last.to) / DAY_MS) <= 3 &&
+          [1, 2, 3].every(function(g) {
+            var mid = addDays(last.to, g);
+            return mid >= info.date || mid.getUTCDay() === 0 || mid.getUTCDay() === 6;
+          })) {
+        last.to = info.date;
+        continue;
+      }
+      if (i > NOTICE_DAYS) break;   // beyond the window: extend only, never add new lines
+      entries.push({ from: info.date, to: info.date, full: full, holiday: info.holiday, closure: c,
+                     svc: full ? null : closedSvcs[0].id, isToday: i === 0 });
+    }
+    return entries.map(function(e) {
+      var txt;
+      if (!e.full) {
+        txt = cap(dayLabel(e.from, L)) + ': ' + (L === 'en'
+          ? (e.svc === 'lunch' ? 'closed at lunch' : 'closed in the evening')
+          : (e.svc === 'lunch' ? "'s middags gesloten" : "'s avonds gesloten"));
+      } else if (e.from.getTime() !== e.to.getTime()) {
+        txt = L === 'en'
+          ? 'Closed from ' + dayLabel(e.from, L) + ' to ' + dayLabel(e.to, L)
+          : 'Gesloten van ' + dayLabel(e.from, L) + ' t.e.m. ' + dayLabel(e.to, L);
+      } else if (e.isToday) {
+        txt = L === 'en' ? 'Closed today' : 'Vandaag gesloten';
+      } else {
+        txt = (L === 'en' ? 'Closed on ' : 'Gesloten op ') + dayLabel(e.from, L);
+      }
+      if (e.holiday) txt += L === 'en' ? ' (public holiday)' : ' (feestdag)';
+      return txt + reasonOf(e.closure, L);
+    });
+  }
+
+  function reopenText(st, L) {
+    var r = st.reopen;
+    if (!r) return '';
+    var when = r.days === 0 ? (L === 'en' ? 'today' : 'vandaag')
+             : r.days === 1 ? (L === 'en' ? 'tomorrow (' : 'morgen (') + dayLabel(r.date, L) + ')'
+             : dayLabel(r.date, L);
+    return L === 'en'
+      ? 'Ordering reopens ' + when + ' from ' + fmtMins(r.time) + '.'
+      : 'Bestellen kan terug ' + when + ' vanaf ' + fmtMins(r.time) + '.';
+  }
+
+  /* ── Apply to the page ── */
+  function show(el, on, disp) { if (el) el.style.display = on ? (disp || '') : 'none'; }
+  function byId(id) { return document.getElementById(id); }
+
+  function applyOrderState() {
+    var st = getOrderState(), L = lang();
+    var hd = window._hoursData || {};
+    document.body.classList.toggle('ordering-closed', st.closed);
+
+    /* Notices: planned closures first, then the owner's free-text notice */
+    var lines = closureNotices(st, L);
+    var free = (L === 'en' ? hd.special_notice_en : hd.special_notice_nl) || '';
+    if (free.trim()) lines.push(free.trim());
+    var stripEl = byId('info-strip-notice'), stripText = byId('info-strip-notice-text');
+    if (stripEl && stripText) {
+      stripText.style.whiteSpace = 'pre-line';
+      stripText.textContent = lines.map(function(l) { return '⚠ ' + l; }).join('\n');
+      show(stripEl, lines.length, 'block');
+    }
+    var barEl = byId('special-notice-bar'), barText = byId('special-notice-text');
+    if (barEl && barText) {
+      barText.style.whiteSpace = 'pre-line';
+      barText.textContent = lines.join('\n');
+      show(barEl, lines.length, 'block');
+    }
+
+    /* Closed banners (menu + ordering section) */
+    var reason = '';
+    if (st.closed) {
+      var c = st.today.services.filter(function(s) { return s.closure; })[0];
+      if (st.today.holiday) reason = L === 'en' ? ' (public holiday)' : ' (feestdag)';
+      else if (c) reason = reasonOf(c.closure, L);
+    }
+    ['closed-banner-menu', 'closed-banner-order'].forEach(function(id) {
+      var b = byId(id);
+      if (!b) return;
+      b.innerHTML = '';
+      var strong = document.createElement('strong');
+      strong.textContent = (L === 'en' ? 'Closed' : 'Gesloten') + reason;
+      b.appendChild(strong);
+      b.appendChild(document.createElement('br'));
+      b.appendChild(document.createTextNode(
+        (L === 'en' ? 'Ordering is not possible right now. ' : 'Bestellen is momenteel niet mogelijk. ') + reopenText(st, L)));
+    });
+
+    /* Ordering section contact cards */
+    document.querySelectorAll('.contact-cards .contact-card').forEach(function(card) {
+      var href = card.getAttribute('href') || '';
+      if (href.indexOf('tel:+3216') === 0) show(card, st.call);
+      else show(card, st.whatsapp);   // WhatsApp/SMS + Messenger
+    });
+    document.querySelectorAll('.nav-cta-btn, .drawer-cta').forEach(function(a) { a.style.visibility = st.call ? '' : 'hidden'; });
+
+    /* Prepayment notice — only where WhatsApp/SMS ordering is offered */
+    var pn = byId('prepay-note');
+    if (pn) { pn.textContent = PREPAY[L]; show(pn, !st.closed); }
+    var mp = byId('modal-prepay');
+    if (mp) { mp.textContent = PREPAY[L]; show(mp, st.whatsapp); }
+
+    /* Cart modal buttons */
+    show(byId('modal-whatsapp-btn'), st.whatsapp, 'flex');
+    var pickRow = byId('pickup-time-row');
+    if (typeof setPickupStep === 'function') setPickupStep(st.whatsapp && !!pickRow && pickRow.classList.contains('show'));
+    show(byId('modal-show-chef-btn'), st.window, 'flex');
+    var call = byId('modal-call-btn');
+    var pickRowOpen = st.whatsapp && byId('pickup-time-row') && byId('pickup-time-row').classList.contains('show');
+    show(call, st.call && !pickRowOpen, 'flex');   // phone orders: whole ordering day (09:30–20:45), hidden while the WhatsApp picker is open
+    if (call) call.classList.toggle('rolling', st.call && st.window);   // "Bestellen & afhalen?" only beside "Toon aan raam"
+    document.querySelectorAll('.call-ticker-label').forEach(function(e) { e.textContent = L === 'en' ? 'Call' : 'Bel'; });
+    document.querySelectorAll('.call-ticker-q').forEach(function(e) { e.textContent = L === 'en' ? 'Order for pickup?' : 'Bestellen & afhalen?'; });
+    if (call) {
+      var num = call.querySelector('.contact-val');
+      call.setAttribute('aria-label', (L === 'en' ? 'Call ' : 'Bel ') + (num ? num.textContent : ''));
+    }
+    var primary = [byId('modal-call-btn'), byId('modal-whatsapp-btn'), byId('modal-show-chef-btn')]
+      .filter(function(b) { return b && b.style.display !== 'none'; });
+    // one button, or WhatsApp + call → full-width rows; "Toon aan raam" + call → side by side
+    primary.forEach(function(b) { b.style.gridColumn = (primary.length === 1 || st.whatsapp) ? '1 / -1' : ''; });
+
+    var hint = byId('modal-order-hint');
+    if (hint) {
+      var msg = '';
+      if (st.closed) msg = (L === 'en' ? 'We are closed. ' : 'We zijn gesloten. ') + reopenText(st, L);
+      else if (!st.whatsapp) msg = L === 'en'
+        ? 'WhatsApp orders: 09:30–10:30 & 13:30–16:30. Outside these hours, please call us.'
+        : 'WhatsApp-bestellingen: 09:30–10:30 & 13:30–16:30. Buiten deze uren kan u ons bellen.';
+      hint.textContent = msg;
+      show(hint, !!msg, 'block');
+    }
+
+    /* Pickup date + time (WhatsApp orders) */
+    var dl = byId('pickup-date-label'); if (dl) dl.textContent = L === 'en' ? 'Preferred pickup date' : 'Gewenste ophaaldag';
+    var cn = byId('pickup-confirm-note'); if (cn) cn.textContent = L === 'en'
+      ? "Date and time are to be confirmed by L'inizio."
+      : "Datum en tijd worden nog bevestigd door L'inizio.";
+    fillPickupDates(st, L);
+    updatePickupTimes(st);
+  }
+
+  /* Open days a customer can pick: today (if a pickup slot is still ahead) up to PICKUP_DAYS ahead.
+     Weekends, public holidays and planned closures are left out. */
+  var PICKUP_DAYS = 60;
+  var SLOT_STEP = 15;
+  function slotsOf(svc) { var out = []; for (var m = svc.start; m <= svc.end; m += SLOT_STEP) out.push(m); return out; }
+  function pickupDays(st) {
+    var days = [];
+    for (var i = 0; i <= PICKUP_DAYS; i++) {
+      var info = dayInfo(addDays(st.now.date, i), st.cms);
+      var ok = info.services.some(function(s) {
+        return s.open && (i > 0 || slotsOf(s).some(function(m) { return m > st.now.mins; }));
+      });
+      if (ok) days.push({ info: info, offset: i });
+    }
+    return days;
+  }
+  function fillPickupDates(st, L) {
+    var sel = byId('pickup-date-select');
+    if (!sel) return;
+    var keep = sel.value;
+    var days = pickupDays(st);
+    sel.innerHTML = '';
+    days.forEach(function(d) {
+      var o = document.createElement('option');
+      o.value = dateKey(d.info.date);
+      var lbl = dayLabel(d.info.date, L);
+      o.textContent = d.offset === 0 ? (L === 'en' ? 'Today – ' : 'Vandaag – ') + lbl
+                    : d.offset === 1 ? (L === 'en' ? 'Tomorrow – ' : 'Morgen – ') + lbl
+                    : cap(lbl);
+      sel.appendChild(o);
+    });
+    if (keep && days.some(function(d) { return dateKey(d.info.date) === keep; })) sel.value = keep;
+  }
+  /* Times for the chosen day: closed services greyed out, and for today only times still ahead */
+  function updatePickupTimes(st) {
+    var sel = byId('pickup-date-select'), ts = byId('pickup-time-select');
+    if (!sel || !ts) return;
+    var m = String(sel.value || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    var date = m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3])) : st.now.date;
+    var info = dayInfo(date, st.cms);
+    var isToday = dateKey(date) === dateKey(st.now.date);
+    [['optgroup-lunch', 'lunch'], ['optgroup-dinner', 'dinner']].forEach(function(p) {
+      var og = byId(p[0]);
+      if (!og) return;
+      var svc = info.services.filter(function(s) { return s.id === p[1]; })[0];
+      var any = false;
+      Array.prototype.forEach.call(og.querySelectorAll('option'), function(o) {
+        var hm = o.value.split(':'), mins = (+hm[0]) * 60 + (+hm[1]);
+        var off = !svc || !svc.open || (isToday && mins <= st.now.mins);
+        o.disabled = off; o.hidden = off;
+        if (!off) any = true;
+      });
+      og.disabled = !any; og.hidden = !any;
+    });
+    if (ts.selectedOptions && ts.selectedOptions[0] && ts.selectedOptions[0].disabled) ts.value = '';
+  }
+  document.addEventListener('change', function(e) {
+    if (e.target && e.target.id === 'pickup-date-select') updatePickupTimes(getOrderState());
+  });
+
+  window._getOrderState = getOrderState;
+  window._applyOrderState = applyOrderState;
+  window._applySpecialNotice = applyOrderState;   // called by setLang()
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyOrderState);
+  else applyOrderState();
+  setInterval(applyOrderState, 30000);
+  document.addEventListener('visibilitychange', function() { if (!document.hidden) applyOrderState(); });
+})();
 </script>
 <script>
 /* ══════════════════════════════════════════════════════
@@ -4322,30 +4910,8 @@ if (window.netlifyIdentity) {
     }
     window._hoursData = d;
 
-    /* applySpecialNotice — updates info strip + hours banner */
-    window._applySpecialNotice = function(lang) {
-      var activeLang = lang || (typeof currentLang !== 'undefined' ? currentLang : 'nl');
-      var isEN = (activeLang === 'en');
-      var notice = isEN ? (d.special_notice_en || '') : (d.special_notice_nl || '');
-      var hasNotice = (notice && notice.trim() !== '');
-
-      var stripEl   = document.getElementById('info-strip-notice');
-      var stripText = document.getElementById('info-strip-notice-text');
-      if (stripEl && stripText) {
-        stripText.textContent = hasNotice ? ('⚠ ' + notice) : '';
-        stripEl.style.display = hasNotice ? 'block' : 'none';
-      }
-
-      var bannerEl   = document.getElementById('special-notice-bar');
-      var bannerText = document.getElementById('special-notice-text');
-      if (bannerEl && bannerText) {
-        bannerText.textContent = hasNotice ? notice : '';
-        bannerEl.style.display = hasNotice ? 'block' : 'none';
-      }
-    };
-    window._applySpecialNotice(
-      (typeof currentLang !== 'undefined' && currentLang) ? currentLang : 'nl'
-    );
+    /* Special notice + closures + ordering options — see ORDER AVAILABILITY */
+    if (window._applyOrderState) window._applyOrderState();
 
     /* patch TRANSLATIONS for EN switching */
     if (typeof TRANSLATIONS !== 'undefined') {
