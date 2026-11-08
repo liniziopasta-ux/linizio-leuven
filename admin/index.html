@@ -6,8 +6,35 @@
   <meta name="robots" content="noindex">
   <title>L'inizio – Admin</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    // After "Log out", reload the admin on its start page. Otherwise Decap stays on the dish
+    // that was open and tries to reload it without a login, which shows the red
+    // "Failed getting access token" message above the login box.
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('logout', function () {
+        var h = window.location.hash;
+        if (h && h !== '#' && h !== '#/') window.location.replace(window.location.pathname);
+      });
+    }
+  </script>
+  <style>
+    /* Phone layout: Decap 3.12.2 forces an 800px-wide page (min-width), so on a phone the
+       form sat in the left half and the rest was off-screen. Let it follow the screen width.
+       Class names below are Decap's own component labels; safe while the version stays pinned. */
+    @media (max-width: 799px) {
+      [class*="-AppHeaderContent"],
+      [class*="-AppMainContainer"],
+      [class*="-EditorContainer"],
+      [class*="-ToolbarContainer"] { min-width: 0 !important; width: 100% !important; }
+      [class*="-ToolbarContainer"] { flex-wrap: wrap; height: auto !important; }
+      /* Start page: the "Collections" side panel (only one collection) takes 280px; hide it on phones */
+      [class*="-SidebarContainer"] { display: none !important; }
+      [class*="-CollectionMain"] { padding-left: 0 !important; }
+      html, body { overflow-x: hidden; }
+    }
+  </style>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script src="https://unpkg.com/decap-cms@3.12.2/dist/decap-cms.js"></script>
 </body>
 </html>

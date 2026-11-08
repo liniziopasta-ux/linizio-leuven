@@ -6,59 +6,37 @@ backend:
 media_folder: "images"
 public_folder: "/images"
 
-# The editor opens directly to the single document
+# Phone-friendly admin: no live preview pane (the form gets the full width),
+# menus first, sold-out switch at the top of every dish and shown in the dish list.
 collections:
   - name: "settings"
     label: "Website inhoud / Content"
+    editor:
+      preview: false
     files:
 
-      # ── GENERAL ──────────────────────────────────────────────────────────
-      - name: "general"
-        label: "📋 Algemeen / General"
-        file: "content/general.json"
-        format: json
-        fields:
-          - { label: "Telefoon 1", name: "phone1", widget: "string", default: "016 / 20.20.56" }
-          - { label: "Telefoon 2 (WhatsApp)", name: "phone2", widget: "string", default: "0485 / 73.63.62" }
-          - { label: "Adres", name: "address", widget: "string", default: "Parijsstraat 39, 3000 Leuven" }
-
-      # ── OPENING HOURS ─────────────────────────────────────────────────────
-      - name: "hours"
-        label: "🕐 Openingsuren / Opening Hours"
-        file: "content/hours.json"
-        format: json
-        fields:
-          - { label: "⚠️ Speciale mededeling NL (laat leeg als geen melding)", name: "special_notice_nl", widget: "string", required: false, hint: "Bijv: Vrijdag 11/05: gesloten middag. Vanavond open vanaf 18:00." }
-          - { label: "⚠️ Special notice EN (leave empty if no notice)", name: "special_notice_en", widget: "string", required: false, hint: "E.g: Friday 11/05: closed at lunch. Open again this evening from 18:00." }
-          - { label: "Middag (NL)", name: "middag_nl", widget: "string", default: "Ma–Vr: 12:00–13:15" }
-          - { label: "Middag (EN)", name: "middag_en", widget: "string", default: "Mon–Fri: 12:00–13:15" }
-          - { label: "Avond (NL)", name: "avond_nl", widget: "string", default: "Ma–Vr: 18:00–20:45" }
-          - { label: "Avond (EN)", name: "avond_en", widget: "string", default: "Mon–Fri: 18:00–20:45" }
-          - { label: "Weekend (NL)", name: "weekend_nl", widget: "string", default: "Za, Zo: Gesloten" }
-          - { label: "Weekend (EN)", name: "weekend_en", widget: "string", default: "Sat, Sun: Closed" }
-          - { label: "Feestdagen (NL)", name: "feestdagen_nl", widget: "string", default: "Feestdagen: Gesloten" }
-          - { label: "Feestdagen (EN)", name: "feestdagen_en", widget: "string", default: "Public holidays: Closed" }
-
-      # ── MENU: SUGGESTIES ──────────────────────────────────────────────────
+      # ── MENU: SUGGESTIES ────────────────────────────────────────────────
       - name: "menu_suggesties"
         label: "⭐ Menu – Suggesties"
         file: "content/menu_suggesties.json"
         format: json
         fields:
-          - { label: "📝 Notitie NL (onderaan tab, laat leeg om te verbergen)", name: "note_nl", widget: "string", required: false, hint: "Bijv: Suggesties wisselen regelmatig. Vraag naar de weekspecial!" }
-          - { label: "📝 Note EN (bottom of tab, leave empty to hide)", name: "note_en", widget: "string", required: false, hint: "E.g: Suggestions change regularly. Ask about the weekly special!" }
           - label: "Gerechten / Dishes"
             name: "items"
             widget: "list"
+            collapsed: true
+            summary: "{{fields.name}}{{fields.sold_out | ternary('   ❌ UITVERKOCHT', '')}}"
             fields:
+              - { label: "❌ Uitverkocht / Sold out", name: "sold_out", widget: "boolean", default: false, required: false, hint: "Aan = tijdelijk niet beschikbaar (grijs op de website)" }
               - { label: "Naam (NL/IT)", name: "name", widget: "string" }
+              - { label: "Prijs (€) — leeg als alleen KV", name: "price", widget: "number", value_type: "float", min: 0, max: 100, step: 0.50, required: false, default: 0 }
+              - { label: "KV prijs (bijv: KV €23)", name: "kv", widget: "string", required: false, hint: "Als het gerecht ALLEEN als KV verkocht wordt, laat dan de gewone prijs leeg." }
               - { label: "Ingrediënten NL", name: "desc_nl", widget: "text" }
               - { label: "Ingredients EN", name: "desc_en", widget: "text" }
-              - { label: "Prijs (€) — laat leeg als alleen KV", name: "price", widget: "number", value_type: "float", min: 0, max: 100, step: 0.50, required: false, default: 0 }
-              - { label: "KV prijs (bijv: KV €23 — vul dit in als het gerecht alleen in KV verkocht wordt)", name: "kv", widget: "string", required: false, hint: "Vul hier de KV prijs in. Als het gerecht ALLEEN als KV verkocht wordt, laat dan de gewone prijs leeg." }
-              - { label: "Uitverkocht / Sold out", name: "sold_out", widget: "boolean", default: false, required: false, hint: "Zet aan als dit gerecht tijdelijk niet beschikbaar is" }
+          - { label: "📝 Notitie NL (onderaan tab, leeg = verborgen)", name: "note_nl", widget: "string", required: false, hint: "Bijv: Suggesties wisselen regelmatig. Vraag naar de weekspecial!" }
+          - { label: "📝 Note EN (bottom of tab, empty = hidden)", name: "note_en", widget: "string", required: false, hint: "E.g: Suggestions change regularly. Ask about the weekly special!" }
 
-      # ── MENU: VEGETARISCH ─────────────────────────────────────────────────
+      # ── MENU: VEGETARISCH ───────────────────────────────────────────────
       - name: "menu_vegetarisch"
         label: "🌿 Menu – Vegetarisch"
         file: "content/menu_vegetarisch.json"
@@ -67,15 +45,17 @@ collections:
           - label: "Gerechten / Dishes"
             name: "items"
             widget: "list"
+            collapsed: true
+            summary: "{{fields.name}}{{fields.sold_out | ternary('   ❌ UITVERKOCHT', '')}}"
             fields:
+              - { label: "❌ Uitverkocht / Sold out", name: "sold_out", widget: "boolean", default: false, required: false, hint: "Aan = tijdelijk niet beschikbaar (grijs op de website)" }
               - { label: "Naam (NL/IT)", name: "name", widget: "string" }
+              - { label: "Prijs (€) — leeg als alleen KV", name: "price", widget: "number", value_type: "float", min: 0, max: 100, step: 0.50, required: false, default: 0 }
+              - { label: "KV prijs (optioneel)", name: "kv", widget: "string", required: false, hint: "Laat leeg als er geen koppelverkoop is" }
               - { label: "Ingrediënten NL", name: "desc_nl", widget: "text" }
               - { label: "Ingredients EN", name: "desc_en", widget: "text" }
-              - { label: "Prijs (€) — laat leeg als alleen KV", name: "price", widget: "number", value_type: "float", min: 0, max: 100, step: 0.50, required: false, default: 0 }
-              - { label: "KV prijs (optioneel)", name: "kv", widget: "string", required: false, hint: "Laat leeg als er geen koppelverkoop is" }
-              - { label: "Uitverkocht / Sold out", name: "sold_out", widget: "boolean", default: false, required: false, hint: "Zet aan als dit gerecht tijdelijk niet beschikbaar is" }
 
-      # ── MENU: VLEES ───────────────────────────────────────────────────────
+      # ── MENU: VLEES ─────────────────────────────────────────────────────
       - name: "menu_vlees"
         label: "🥩 Menu – Vlees / Meat"
         file: "content/menu_vlees.json"
@@ -84,15 +64,17 @@ collections:
           - label: "Gerechten / Dishes"
             name: "items"
             widget: "list"
+            collapsed: true
+            summary: "{{fields.name}}{{fields.sold_out | ternary('   ❌ UITVERKOCHT', '')}}"
             fields:
+              - { label: "❌ Uitverkocht / Sold out", name: "sold_out", widget: "boolean", default: false, required: false, hint: "Aan = tijdelijk niet beschikbaar (grijs op de website)" }
               - { label: "Naam (NL/IT)", name: "name", widget: "string" }
+              - { label: "Prijs (€) — leeg als alleen KV", name: "price", widget: "number", value_type: "float", min: 0, max: 100, step: 0.50, required: false, default: 0 }
+              - { label: "KV prijs (optioneel)", name: "kv", widget: "string", required: false, hint: "Laat leeg als er geen koppelverkoop is" }
               - { label: "Ingrediënten NL", name: "desc_nl", widget: "text" }
               - { label: "Ingredients EN", name: "desc_en", widget: "text" }
-              - { label: "Prijs (€) — laat leeg als alleen KV", name: "price", widget: "number", value_type: "float", min: 0, max: 100, step: 0.50, required: false, default: 0 }
-              - { label: "KV prijs (optioneel)", name: "kv", widget: "string", required: false, hint: "Laat leeg als er geen koppelverkoop is" }
-              - { label: "Uitverkocht / Sold out", name: "sold_out", widget: "boolean", default: false, required: false, hint: "Zet aan als dit gerecht tijdelijk niet beschikbaar is" }
 
-      # ── MENU: VIS ─────────────────────────────────────────────────────────
+      # ── MENU: VIS ───────────────────────────────────────────────────────
       - name: "menu_vis"
         label: "🐟 Menu – Vis / Fish"
         file: "content/menu_vis.json"
@@ -101,13 +83,15 @@ collections:
           - label: "Gerechten / Dishes"
             name: "items"
             widget: "list"
+            collapsed: true
+            summary: "{{fields.name}}{{fields.sold_out | ternary('   ❌ UITVERKOCHT', '')}}"
             fields:
+              - { label: "❌ Uitverkocht / Sold out", name: "sold_out", widget: "boolean", default: false, required: false, hint: "Aan = tijdelijk niet beschikbaar (grijs op de website)" }
               - { label: "Naam (NL/IT)", name: "name", widget: "string" }
+              - { label: "Prijs (€) — leeg als alleen KV", name: "price", widget: "number", value_type: "float", min: 0, max: 100, step: 0.50, required: false, default: 0 }
+              - { label: "KV prijs (optioneel)", name: "kv", widget: "string", required: false, hint: "Laat leeg als er geen koppelverkoop is" }
               - { label: "Ingrediënten NL", name: "desc_nl", widget: "text" }
               - { label: "Ingredients EN", name: "desc_en", widget: "text" }
-              - { label: "Prijs (€) — laat leeg als alleen KV", name: "price", widget: "number", value_type: "float", min: 0, max: 100, step: 0.50, required: false, default: 0 }
-              - { label: "KV prijs (optioneel)", name: "kv", widget: "string", required: false, hint: "Laat leeg als er geen koppelverkoop is" }
-              - { label: "Uitverkocht / Sold out", name: "sold_out", widget: "boolean", default: false, required: false, hint: "Zet aan als dit gerecht tijdelijk niet beschikbaar is" }
 
       # ── MENU: SUPPLEMENTEN ────────────────────────────────────────────────
       - name: "menu_extra"
@@ -118,7 +102,54 @@ collections:
           - label: "Supplementen"
             name: "items"
             widget: "list"
+            collapsed: true
+            summary: "{{fields.name_nl}} — € {{fields.price}}"
             fields:
               - { label: "Naam NL", name: "name_nl", widget: "string" }
               - { label: "Name EN", name: "name_en", widget: "string" }
               - { label: "Prijs (€)", name: "price", widget: "number", value_type: "float", min: 0, max: 100, step: 0.10 }
+
+      # ── OPENING HOURS ─────────────────────────────────────────────────────
+      - name: "hours"
+        label: "🕐 Openingsuren / Opening Hours"
+        file: "content/hours.json"
+        format: json
+        fields:
+          - label: "🚫 Sluitingen / Closures"
+            name: "closures"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.start}} → {{fields.end}}"
+            hint: "Zaterdag, zondag en wettelijke feestdagen zijn automatisch gesloten. Voeg hier enkel extra sluitingen toe. Tijdens een sluiting kan er niet besteld worden (WhatsApp, bellen en aan het raam worden verborgen). Hele dag: van 00:00 tot 23:59."
+            fields:
+              - { label: "Van / From", name: "start", widget: "datetime", format: "YYYY-MM-DD HH:mm", date_format: "DD/MM/YYYY", time_format: "HH:mm", picker_utc: false }
+              - { label: "Tot / Until", name: "end", widget: "datetime", format: "YYYY-MM-DD HH:mm", date_format: "DD/MM/YYYY", time_format: "HH:mm", picker_utc: false }
+              - { label: "Reden NL (optioneel)", name: "reason_nl", widget: "string", required: false, hint: "Bijv: vakantie" }
+              - { label: "Reason EN (optional)", name: "reason_en", widget: "string", required: false, hint: "E.g: holiday" }
+          - label: "✅ Toch open op feestdag / Open on a public holiday"
+            name: "open_holidays"
+            widget: "list"
+            required: false
+            hint: "Enkel invullen als u op een wettelijke feestdag tóch open bent."
+            field: { label: "Datum / Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, picker_utc: false }
+          - { label: "⚠️ Speciale mededeling NL (laat leeg als geen melding)", name: "special_notice_nl", widget: "string", required: false, hint: "Voor algemene mededelingen. Sluitingen hierboven verschijnen automatisch op de website." }
+          - { label: "⚠️ Special notice EN (leave empty if no notice)", name: "special_notice_en", widget: "string", required: false, hint: "For general announcements. Closures above appear on the website automatically." }
+          - { label: "Middag (NL)", name: "middag_nl", widget: "string", default: "Ma–Vr: 12:00–13:15" }
+          - { label: "Middag (EN)", name: "middag_en", widget: "string", default: "Mon–Fri: 12:00–13:15" }
+          - { label: "Avond (NL)", name: "avond_nl", widget: "string", default: "Ma–Vr: 18:00–20:45" }
+          - { label: "Avond (EN)", name: "avond_en", widget: "string", default: "Mon–Fri: 18:00–20:45" }
+          - { label: "Weekend (NL)", name: "weekend_nl", widget: "string", default: "Za, Zo: Gesloten" }
+          - { label: "Weekend (EN)", name: "weekend_en", widget: "string", default: "Sat, Sun: Closed" }
+          - { label: "Feestdagen (NL)", name: "feestdagen_nl", widget: "string", default: "Feestdagen: Gesloten" }
+          - { label: "Feestdagen (EN)", name: "feestdagen_en", widget: "string", default: "Public holidays: Closed" }
+
+      # ── GENERAL ──────────────────────────────────────────────────────────
+      - name: "general"
+        label: "📋 Algemeen / General"
+        file: "content/general.json"
+        format: json
+        fields:
+          - { label: "Telefoon 1", name: "phone1", widget: "string", default: "016 / 20.20.56" }
+          - { label: "Telefoon 2 (WhatsApp)", name: "phone2", widget: "string", default: "0485 / 73.63.62" }
+          - { label: "Adres", name: "address", widget: "string", default: "Parijsstraat 39, 3000 Leuven" }
