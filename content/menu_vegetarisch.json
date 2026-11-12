@@ -19,7 +19,8 @@
       "desc_nl": "Kerstomatensaus, look, ajuin, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basilicum, zwarte peper",
       "desc_en": "Cherry tomato sauce, garlic, onion, eggplants , mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper",
       "price": 17.5,
-      "kv": ""
+      "kv": "",
+      "sold_out": true
     },
     {
       "name": "🧄 AGLIO OLIO PREZZEMOLO E PEPERONCINO",
