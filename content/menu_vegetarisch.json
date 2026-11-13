@@ -20,7 +20,7 @@
       "desc_en": "Cherry tomato sauce, garlic, onion, eggplants , mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper",
       "price": 17.5,
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🧄 AGLIO OLIO PREZZEMOLO E PEPERONCINO",
